@@ -1,0 +1,129 @@
+
+- type: martialArt
+  id: Combatives
+  martialArtsForm: Combatives
+  roundstartCombos: CombativesMoves
+
+- type: comboList
+  id: CombativesMoves
+  combos:
+  - CombativesChoke           # Grab -> Grab -> Grab -> Grab
+  - CombativesRestrain        # Grab -> Grab -> Disarm
+  - CombativesRestrainWithGun # Grab -> Grab -> HarmLight
+  - CombativesPummel          # Disarm -> Disarm -> Harm
+  - CombativesKnockdown       # Harm -> Harm -> Disarm
+  - CombativesThrow           # Grab -> Disarm
+  - CombativesThrowWithGun    # Grab -> HarmLight
+  - CombativesSlitThroat      # Grab -> HarmLight
+  - CombativesWeakening       # Disarm -> Disarm
+  - CombativesDisarm          # Harm -> Disarm
+
+- type: combo
+  id: CombativesRestrain
+  name: Restrain
+  martialArtsForm: Combatives
+  attacks:
+  - Grab
+  - Grab
+  - Disarm
+  event: !type:CombativesRestrainPerformedEvent
+
+- type: combo
+  id: CombativesRestrainWithGun
+  name: Armed Restrain
+  martialArtsForm: Combatives
+  attacks:
+  - Grab
+  - Grab
+  - HarmLight
+  event: !type:CombativesRestrainPerformedEvent
+
+- type: combo
+  id: CombativesThrow
+  name: Throw
+  martialArtsForm: Combatives
+  attacks:
+  - Grab
+  - Disarm
+  event: !type:CombativesThrowPerformedEvent
+  canDoWhileProne: false
+  staminaDamage: 25
+  paralyzeTime: 7
+
+- type: combo
+  id: CombativesThrowWithGun
+  name: Armed Throw
+  martialArtsForm: Combatives
+  attacks:
+  - Grab
+  - HarmLight
+  event: !type:CombativesThrowPerformedEvent
+  canDoWhileProne: false
+  staminaDamage: 25
+  paralyzeTime: 7
+
+- type: combo
+  id: CombativesChoke
+  name: Choke
+  martialArtsForm: Combatives
+  attacks:
+  - Grab
+  - Grab
+  - Grab
+  - Grab
+  event: !type:CombativesChokePerformedEvent
+  staminaDamage: 200
+  canDoWhileProne: false
+
+- type: combo
+  id: CombativesSlitThroat
+  name: Slit Throat
+  martialArtsForm: Combatives
+  attacks:
+  - Grab
+  - Harm
+  event: !type:CombativesSlitThroatPerformedEvent
+  extraDamage: 150
+  canDoWhileProne: false
+
+- type: combo
+  id: CombativesKnockdown
+  name: Knockdown
+  martialArtsForm: Combatives
+  attacks:
+  - Harm
+  - Harm
+  - Disarm
+  event: !type:CombativesKnockdownPerformedEvent
+  staminaDamage: 30
+  extraDamage: 15
+
+- type: combo
+  id: CombativesWeakening
+  name: Weakening
+  martialArtsForm: Combatives
+  attacks:
+  - Disarm
+  - Disarm
+  event: !type:CombativesWeakeningPerformedEvent
+  staminaDamage: 20
+
+- type: combo
+  id: CombativesPummel
+  name: Pummel
+  martialArtsForm: Combatives
+  attacks:
+  - Disarm
+  - Disarm
+  - Harm
+  event: !type:CombativesPummelPerformedEvent
+  staminaDamage: 75
+
+- type: combo
+  id: CombativesDisarm
+  name: Disarm
+  martialArtsForm: Combatives
+  attacks:
+  - Harm
+  - Disarm
+  event: !type:CombativesDisarmPerformedEvent

@@ -19,6 +19,14 @@ public record struct GrabAttemptReleaseEvent(
     public bool Released = true;
 }
 
+// EDIT Wormix Start
+[ByRefEvent]
+public record struct BeforeReleaseEvent()
+{
+    public bool Canceled = false;
+}
+// EDIT Wormix End
+
 [ByRefEvent]
 public record struct CheckGrabbedEvent(bool IsGrabbed = false);
 
