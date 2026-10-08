@@ -1,0 +1,66 @@
+﻿<DefaultWindow
+    xmlns="https://spacestation14.io"
+    Title="Add Audio Track"
+    SetWidth="460"
+    SetHeight="340">
+
+    <BoxContainer
+        Orientation="Vertical"
+        SeparationOverride="8">
+
+        <Label
+            Name="GroupLabel"
+            Text="Group" />
+
+        <Label Text="Track name" />
+
+        <LineEdit
+            Name="TrackNameEdit"
+            PlaceHolder="Example: Combat Theme"
+            HorizontalExpand="True" />
+
+        <Label Text="Audio path" />
+
+        <LineEdit
+            Name="TrackPathEdit"
+            PlaceHolder="/Audio/Music/example.ogg"
+            HorizontalExpand="True" />
+
+        <Label Text="Volume" />
+
+        <LineEdit
+            Name="VolumeEdit"
+            Text="1"
+            HorizontalExpand="True" />
+
+        <Label Text="Loop" />
+
+        <OptionButton
+            Name="LoopOption"
+            HorizontalExpand="True" />
+
+        <Label
+            Name="ErrorLabel"
+            Text=""
+            Visible="False"
+            HorizontalAlignment="Center" />
+
+        <BoxContainer
+            Orientation="Horizontal"
+            HorizontalAlignment="Right"
+            SeparationOverride="8">
+
+            <Button
+                Name="CancelButton"
+                Text="Cancel" />
+
+            <Button
+                Name="AddButton"
+                Text="Add"
+                Disabled="True" />
+
+        </BoxContainer>
+
+    </BoxContainer>
+
+</DefaultWindow>

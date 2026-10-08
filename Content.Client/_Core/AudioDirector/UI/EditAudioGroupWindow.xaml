@@ -1,0 +1,99 @@
+﻿<DefaultWindow
+    xmlns="https://spacestation14.io"
+    Title="Edit Audio Group"
+    SetWidth="420"
+    SetHeight="340">
+
+    <BoxContainer
+        Orientation="Vertical"
+        SeparationOverride="8">
+
+        <Label Text="Name" />
+
+        <LineEdit
+            Name="GroupNameEdit"
+            PlaceHolder="Group name"
+            HorizontalExpand="True" />
+
+        <Label Text="Target Type" />
+
+        <Label
+            Name="TargetTypeLabel"
+            Text="Unknown" />
+
+        <BoxContainer
+            Name="GridTargetEditor"
+            Orientation="Vertical"
+            SeparationOverride="4"
+            Visible="False">
+
+            <Label Text="Grid UID" />
+
+            <LineEdit
+                Name="GridUidEdit"
+                PlaceHolder="Grid UID"
+                HorizontalExpand="True" />
+
+        </BoxContainer>
+
+        <BoxContainer
+            Name="MapTargetEditor"
+            Orientation="Vertical"
+            SeparationOverride="4"
+            Visible="False">
+
+            <Label Text="Map ID" />
+
+            <LineEdit
+                Name="MapIdEdit"
+                PlaceHolder="Map ID"
+                HorizontalExpand="True" />
+
+        </BoxContainer>
+
+        <BoxContainer
+            Name="PlayersTargetEditor"
+            Orientation="Vertical"
+            SeparationOverride="4"
+            Visible="False">
+
+            <Label Text="Players" />
+
+            <ScrollContainer
+                VerticalExpand="True"
+                MinHeight="120">
+
+                <BoxContainer
+                    Name="PlayersList"
+                    Orientation="Vertical"
+                    SeparationOverride="4" />
+
+            </ScrollContainer>
+
+        </BoxContainer>
+
+        <Label
+            Name="ErrorLabel"
+            Text=""
+            Visible="False"
+            HorizontalAlignment="Center" />
+
+        <BoxContainer
+            Orientation="Horizontal"
+            HorizontalAlignment="Right"
+            SeparationOverride="8">
+
+            <Button
+                Name="CancelButton"
+                Text="Cancel" />
+
+            <Button
+                Name="SaveButton"
+                Text="Save"
+                Disabled="True" />
+
+        </BoxContainer>
+
+    </BoxContainer>
+
+</DefaultWindow>

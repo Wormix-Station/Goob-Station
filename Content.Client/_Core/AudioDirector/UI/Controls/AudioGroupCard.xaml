@@ -1,0 +1,63 @@
+﻿<BoxContainer
+    xmlns="https://spacestation14.io"
+    Orientation="Vertical"
+    HorizontalExpand="True">
+
+    <BoxContainer
+        Name="HeaderContainer"
+        Orientation="Horizontal"
+        HorizontalExpand="True">
+
+        <Button
+            Name="DeleteGroupButton"
+            Text="-"
+            MinWidth="32"
+            Visible="False"
+            StyleClasses="negative" />
+
+        <Button
+            Name="CollapseButton"
+            Text="▼"
+            MinWidth="32" />
+
+        <Button
+            Name="HeaderButton"
+            HorizontalExpand="True">
+
+            <BoxContainer
+                Orientation="Vertical"
+                HorizontalExpand="True">
+
+                <Label
+                    Name="GroupNameLabel"
+                    Text="Unnamed Group"
+                    HorizontalExpand="True" />
+
+                <Label
+                    Name="TargetTypeLabel"
+                    Text="Unknown"
+                    HorizontalExpand="True" />
+
+            </BoxContainer>
+
+        </Button>
+
+        <Button
+            Name="AddTrackButton"
+            Text="+"
+            MinWidth="36" />
+
+        <Button
+            Name="EditGroupButton"
+            Text="✎"
+            MinWidth="36" />
+
+    </BoxContainer>
+
+    <BoxContainer
+        Name="ContentContainer"
+        Orientation="Vertical"
+        HorizontalExpand="True"
+        Visible="True" />
+
+</BoxContainer>
