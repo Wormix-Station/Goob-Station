@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -421,15 +423,16 @@ namespace Content.Server.Database
         // Orion-End
         public int Age { get; set; }
         public string Sex { get; set; } = null!;
+        public string? Voice { get; set; } = null!; // CorvaxGoob-TTS
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
         public float Height { get; set; } = 1f; // Goobstation: port EE height/width sliders
         public float Width { get; set; } = 1f; // Goobstation: port EE height/width sliders
-        public string Voice { get; set; } = null!; // Corvax-TTS
         public string BarkProto { get; set; } = null!; // ADT Barks
         public float BarkPitch { get; set; } = 1f; // ADT Barks
         public float LowBarkVar { get; set; } = 0.1f; // ADT Barks
         public float HighBarkVar { get; set; } = 0.5f; // ADT Barks
+        [Column("ttsvoice")] public string TTSVoice { get; set; } = null!; // CorvaxGoob-TTS
         [Column(TypeName = "jsonb")] public JsonDocument? OrganMarkings { get; set; } = null!;
         [Column(TypeName = "jsonb")] public JsonDocument? Markings { get; set; } = null!;
         public string HairName { get; set; } = null!;

@@ -306,13 +306,15 @@ public sealed partial class DetailExaminableWindow : FancyWindow
 
     private void CreateLinkButton(string url, BoxContainer linksContainer)
     {
+        var styleClass = StyleClass.ButtonOpenBoth;
+
         var button = new Button
         {
             Text = GetLinkDisplayText(url),
             ToolTip = Loc.GetString("humanoid-profile-editor-link-tooltip", ("url", url)),
             HorizontalExpand = true,
             HorizontalAlignment = HAlignment.Center,
-            StyleClasses = { StyleBase.ButtonOpenBoth },
+            StyleClasses = { styleClass },
         };
 
         button.OnPressed += _ => OpenLink(url);

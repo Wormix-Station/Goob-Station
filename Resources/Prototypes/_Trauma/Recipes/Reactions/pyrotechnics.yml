@@ -27,6 +27,8 @@
       amount: 1
     NitricAcid:
       amount: 1
+    Vestine:
+      amount: 1 # CorvaxGoob edit
   products:
     Cyclonite: 2
 
@@ -53,6 +55,6 @@
     Hexamine:
       amount: 1
     Vestine:
-      amount: 1 # CorvaxGoob edit
+      amount: 1
   products:
-    Octogen: 4
+    Octogen: 5

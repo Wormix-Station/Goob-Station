@@ -139,7 +139,7 @@
       - NotekeeperCartridge
       - NewsReaderCartridge
       - NanoChatCartridge
-      - MailMetricsCartridge
+      #- MailMetricsCartridge CorvaxGoob временно вырезано оффгубами - Марти. Искать по todo <mailfix>
       - WantedListCartridge
     cartridgeSlot:
       priority: -1
@@ -156,3 +156,10 @@
     interfaces:
       enum.PdaUiKey.Key:
         type: PdaBoundUserInterface
+
+- type: entity
+  id: SyndiOperativePDAUnremoveable
+  parent: SyndiOperativePDA
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable

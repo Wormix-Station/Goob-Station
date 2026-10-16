@@ -40,6 +40,11 @@
     solutions:
       stomach:
         maxVol: 30 # Their body is thin as fuck.
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Item
     size: Small
     heldPrefix: stomach
@@ -75,7 +80,6 @@
     metabolizerTypes: [Human]
     groups:
     - id: Alcohol
-      rateModifier: 0.1 # removes alcohol very slowly along with the stomach removing it as a drink
 
 - type: entity
   id: OrganHydrakinHeart
@@ -83,7 +87,7 @@
   name: hydrakin heart
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Hydrakin ]
+    metabolizerTypes: [ Hydrakin, Animal ] # goob edit - theobromine hurty
 
 - type: entity
   id: OrganHydrakinLungs

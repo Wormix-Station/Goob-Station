@@ -77,23 +77,23 @@
             "name": "gauze_lowerarm_r_shadekin",
             "directions": 4
         },
-        {
+		{
             "name": "gauze_shoulder_shadekin",
             "directions": 4
         },
-        {
+		{
             "name": "gauze_upperarm_l_shadekin",
             "directions": 4
         },
-        {
+		{
             "name": "gauze_upperarm_r_shadekin",
             "directions": 4
         },
-        {
+		{
             "name": "gauze_upperleg_l_shadekin",
             "directions": 4
         },
-        {
+		{
             "name": "gauze_upperleg_r_shadekin",
             "directions": 4
         }

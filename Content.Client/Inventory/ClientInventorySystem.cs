@@ -173,6 +173,7 @@ namespace Content.Client.Inventory
             }
         }
 
+
         public void ReloadInventory(InventorySlotsComponent? component = null)
         {
             var player = _playerManager.LocalEntity;

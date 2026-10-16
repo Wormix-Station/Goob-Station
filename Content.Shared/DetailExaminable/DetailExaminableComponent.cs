@@ -16,7 +16,8 @@ public sealed partial class DetailExaminableComponent : Component
     public string Content = string.Empty;
 
     // SD-ERPStatus-start
-    [DataField("ERPStatus", required: true)]
+    // WORMIX TODO FIX
+    [DataField("ERPStatus", required: false)]
     [ViewVariables(VVAccess.ReadWrite)]
     public EnumERPStatus ERPStatus = EnumERPStatus.NO;
 

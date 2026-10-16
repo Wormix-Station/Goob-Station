@@ -7,10 +7,10 @@ using Robust.Shared.Prototypes;
 namespace Content.Server._Wormix.StationGoals
 {
     [Serializable, Prototype("departmentGoal")]
-    public sealed class DepartmentGoalPrototype : IPrototype
+    public sealed partial class DepartmentGoalPrototype : IPrototype
     {
         [IdDataFieldAttribute]
-        public string ID { get; } = default!;
+        public string ID { get; private set; } = default!;
 
         [DataField]
         public string Text { get; set; } = string.Empty;

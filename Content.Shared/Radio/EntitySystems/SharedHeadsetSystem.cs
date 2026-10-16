@@ -1,8 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-//
 // SPDX-License-Identifier: MIT
 
+using Content.Shared.Emp;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Radio.Components;
@@ -14,6 +12,7 @@ public abstract class SharedHeadsetSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
+
         SubscribeLocalEvent<HeadsetComponent, InventoryRelayedEvent<GetDefaultRadioChannelEvent>>(OnGetDefault);
         SubscribeLocalEvent<HeadsetComponent, GotEquippedEvent>(OnGotEquipped);
         SubscribeLocalEvent<HeadsetComponent, GotUnequippedEvent>(OnGotUnequipped);
@@ -35,10 +34,22 @@ public abstract class SharedHeadsetSystem : EntitySystem
     {
         component.IsEquipped = args.SlotFlags.HasFlag(component.RequiredSlot) ||
                                args.SlotFlags.HasFlag(component.AdditionalSlot); // Orion-Edit: Added AdditionalSlot
+        Dirty(uid, component);
+
     }
 
     protected virtual void OnGotUnequipped(EntityUid uid, HeadsetComponent component, GotUnequippedEvent args)
     {
         component.IsEquipped = false;
+        Dirty(uid, component);
+    }
+
+    private void OnEmpPulse(Entity<HeadsetComponent> ent, ref EmpPulseEvent args)
+    {
+        if (ent.Comp.Enabled)
+        {
+            args.Affected = true;
+            args.Disabled = true;
+        }
     }
 }

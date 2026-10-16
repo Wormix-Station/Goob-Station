@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
 using Content.Client._Funkystation.VendingMachines; // Funky change
 using Content.Shared.VendingMachines;
@@ -34,6 +36,7 @@ public sealed partial class VendingMachineSystem : SharedVendingMachineSystem
         component.EjectEnd = state.EjectEnd;
         component.DenyEnd = state.DenyEnd;
         component.DispenseOnHitEnd = state.DispenseOnHitEnd;
+        component.Broken = state.Broken;
 
         // If all we did was update amounts then we can leave BUI buttons in place.
         var fullUiUpdate = !component.Inventory.Keys.SequenceEqual(state.Inventory.Keys) ||

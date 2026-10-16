@@ -1,23 +1,8 @@
-// SPDX-FileCopyrightText: 2023 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2023 AlexMorgan3817 <46600554+AlexMorgan3817@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 CerberusWolfie <wb.johnb.willis@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 John Willis <143434770+CerberusWolfie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-//
 // SPDX-License-Identifier: MIT
 
 using Content.Server._EinsteinEngines.Language;
 using Content.Server.Chat.Systems;
 using Content.Server.Emp;
-using Content.Server.Radio.Components;
 using Content.Shared.Chat;
 using Content.Shared.Examine;
 using Content.Shared.Inventory;
@@ -51,8 +36,6 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
         SubscribeLocalEvent<InventoryComponent, ExaminedEvent>(OnInventoryExamined);
         // Orion-End
         SubscribeLocalEvent<HeadsetComponent, RadioReceiveAttemptEvent>(OnHeadsetReceiveAttempt); // Goobstation - Whitelisted radio channel
-
-        SubscribeLocalEvent<HeadsetComponent, EmpPulseEvent>(OnEmpPulse);
     }
 
     private void OnKeysChanged(EntityUid uid, HeadsetComponent component, EncryptionChannelsChangedEvent args)
@@ -84,8 +67,13 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             && _whitelist.IsWhitelistPassOrNull(args.Channel.SendWhitelist, uid)) // Goobstation - Whitelisted channels
         {
             _radio.SendRadioMessage(uid, args.Message, args.Channel, component.Headset);
+
+            var sound = args.Channel.OnSendSound ?? DefaultOnSound;
+            _audio.PlayEntity(sound, uid, uid);
+
             args.Channel = null; // prevent duplicate messages from other listeners.
         }
+
     }
 */
 
@@ -243,15 +231,6 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
         }
         // Einstein Engines - Language end
-    }
-
-    private void OnEmpPulse(EntityUid uid, HeadsetComponent component, ref EmpPulseEvent args)
-    {
-        if (component.Enabled)
-        {
-            args.Affected = true;
-            args.Disabled = true;
-        }
     }
 
     // Goobstation - Whitelisted radio channel

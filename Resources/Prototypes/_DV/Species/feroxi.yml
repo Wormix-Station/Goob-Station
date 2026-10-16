@@ -22,6 +22,8 @@
     Chest: MobFeroxiChest
     Groin: MobFeroxiGroin
     HeadTop: MobHumanoidAnyMarking
+    #UndergarmentTop: MobHumanoidAnyMarking # Wormix
+    #UndergarmentBottom: MobHumanoidAnyMarking # Wormix
     Tail: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     LArm: MobFeroxiLArm

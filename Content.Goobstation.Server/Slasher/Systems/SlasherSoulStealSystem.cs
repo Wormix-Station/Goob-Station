@@ -31,6 +31,7 @@ using Robust.Shared.Timing;
 using FixedPoint2 = Content.Goobstation.Maths.FixedPoint.FixedPoint2;
 using System.Linq;
 using Content.Server.Light.Components;
+using Content.Shared.Light.Components;
 using Robust.Server.GameObjects;
 using Content.Shared.Inventory;
 using Content.Shared.Roles;
@@ -236,6 +237,8 @@ public sealed class SlasherSoulStealSystem : EntitySystem
             && totalSouls >= comp.AscendanceSoulThreshold)
         {
             comp.HasAscended = true;
+
+            RaiseLocalEvent(new SlasherAscendedEvent());
 
             // Initialize the light flicker timer when ascending
             comp.NextLightFlicker = _timing.CurTime + comp.LightFlickerInterval;
