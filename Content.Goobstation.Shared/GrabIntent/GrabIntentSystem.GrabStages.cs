@@ -266,14 +266,11 @@ public sealed partial class GrabIntentSystem
 
         var newStage = grabIntentComp.GrabStage + nextStageAddition;
 
-        if (HasComp<MartialArtsKnowledgeComponent>(pullerUid)
-            && TryComp<RequireProjectileTargetComponent>(pullable.Owner, out var layingDown)
-            && layingDown.Active)
-        {
-            var ev = new CheckGrabOverridesEvent(newStage);
-            RaiseLocalEvent(pullerUid, ev);
-            newStage = ev.Stage;
-        }
+        // Wormix EDIT Start
+        var ev = new CheckGrabOverridesEvent(newStage, pullable.Owner);
+        RaiseLocalEvent(pullerUid, ev);
+        newStage = ev.Stage;
+        // Wormix EDIT End
 
         if (grabStageOverride != null)
             newStage = grabStageOverride.Value;

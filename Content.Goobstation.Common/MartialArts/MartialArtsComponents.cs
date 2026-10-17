@@ -62,4 +62,5 @@ public enum MartialArtsForms
     KungFuDragon,
     Ninjutsu,
     HellRip,
+    Combatives, // Wormix EDIT
 }

@@ -1,0 +1,15 @@
+- type: entity
+  parent: [BaseItem, BaseSyndicateContraband]
+  id: CombativesManual
+  name: Combatives Manual
+  description: A worn, unmarked black manual containing diagrams and principles of close-quarters combatives.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/cqc_manual.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Small
+  - type: StaticPrice
+    price: 3000
+  - type: GrantCombatives

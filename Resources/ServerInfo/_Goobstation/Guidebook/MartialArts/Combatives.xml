@@ -1,0 +1,86 @@
+<Document>
+
+  # Комбативс
+
+  Искусство ближнего боя, разработанное для боевых спецподразделений. Крайне эффективен на ближних дистанциях, предоставляя тактическое преимущество против нескольких вооружённых противников при достаточной ловкости.
+  Скорость атак, захватов и толчков без оружия увеличена втрое.
+
+
+  ### Захват и удержание
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+  </Box>
+
+  Позволяет исполнить особый захват, принудительно удерживающий цель в захвате и блокируя любые её действия.
+
+  ### Удушение
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+  </Box>
+
+  Выполняется из удержания. Оглушает противника, либо усыпляет, если он уже был оглушён.
+
+  ### Контратака
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+  </Box>
+
+  Приём с высокой эффективностью, в случае, если вас взяли в особые захваты этого и других искусств ближнего боя, а также если вы лежите на полу.
+
+  ### Бросок
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+  </Box>
+
+  Мощный бросок вперёд, швыряющий противника в направлении от вас и сбивающий с ног противников по пути.
+
+  ### Перерезание горла
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookGrab" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+  </Box>
+
+  Выполняется с ножом из захвата, должен быть нацелев в голову. Наносит огромный колотый урон, вводя противника в критическое состояние и ломает шею.
+
+  ### Ослабление
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+  </Box>
+
+  Серия ударов, снижающая скорость передвижения противника и наносящая серьёзный урон выносливости. При атаке на противника с оружием, имеющим затвор, открывает его, мешая ведению огня. Не сбрасывает счётчик комбо.
+
+  ### Избиение
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+  </Box>
+
+  Серия быстрых ударов, наносящая урон ушибами и оглушающая противника. Завершает серию ослаблений.
+
+  ### Обезоруживание
+
+  <Box>
+    <GuideEntityEmbed Entity="GuidebookHarm" Caption=""/>
+    <GuideEntityEmbed Entity="GuidebookDisarm" Caption=""/>
+  </Box>
+
+  Выбивает оружие из активной руки.
+
+</Document>

@@ -35,6 +35,12 @@ public sealed partial class GrabIntentSystem
 
         if (_timing.CurTime < pullable.Comp.NextEscapeAttempt)
             return GrabResistResult.TooSoon;
+        // EDIT Wormix Start
+        var beforeRelease = new BeforeReleaseEvent();
+        RaiseLocalEvent(pullable, ref beforeRelease);
+        if (beforeRelease.Canceled)
+            return GrabResistResult.Failed;
+        // EDIT Wormix End
 
         var seedArray = new List<int> { (int) _timing.CurTick.Value, GetNetEntity(pullable.Owner).Id };
         var seed = SharedRandomExtensions.HashCodeCombine(seedArray);

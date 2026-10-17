@@ -14,6 +14,7 @@ capoeira-success-learned = Вы освоили капоэйру. Учебник 
 dragon-success-learned = Вы освоили стиль Дракона (Кунг-фу). Учебник сгорает у вас в руках...
 ninjutsu-success-learned = Вы освоили ниндзюцу. Свиток сгорает у вас в руках...
 hellrip-success-learned = Вы освоили Адский разрыв. Свиток сгорает у вас в руках...
+combatives-success-learned = Вы освоили Комбативс.
 carp-scroll-waiting = Путь в тысячу миль начинается с одного шага, а путь мудрости проходит медленно, урок за уроком.
 carp-scroll-advance = Вы сделали ещё один шаг к мастерству Пути Спящего Карпа.
 carp-scroll-complete = Теперь вы мастер Пути Спящего Карпа.
@@ -90,6 +91,17 @@ martial-arts-combo-JudoThrow = броском дзюдо
 martial-arts-combo-JudoArmbar = захватом руки рычагом
 martial-arts-combo-JudoWheelThrow = колесом
 martial-arts-combo-JudoDisarming = обезоручивание
+# Combatives
+martial-arts-combo-CombativesChoke = удушением
+martial-arts-combo-CombativesRestrain = сдерживающим захватом
+martial-arts-combo-CombativesRestrainWithGun = сдерживающим захватом
+martial-arts-combo-CombativesPummel = градом ударов
+martial-arts-combo-CombativesKnockdown = контр-приёмом
+martial-arts-combo-CombativesThrow = броском
+martial-arts-combo-CombativesThrowWithGun = броском
+martial-arts-combo-CombativesSlitThroat = перерезанием горла
+martial-arts-combo-CombativesWeakening = ослабляющим ударом
+martial-arts-combo-CombativesDisarm = разоружением
 # Ninjutsu
 martial-arts-combo-BiteTheDust = канув в пыли
 martial-arts-combo-DirtyKill = грязным убийством
