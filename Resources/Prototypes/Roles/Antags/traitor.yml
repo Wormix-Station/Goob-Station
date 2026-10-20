@@ -4,31 +4,31 @@
   id: Traitor
   name: roles-antag-syndicate-agent-name
   antagonist: true
-  setPreference: true
+  setPreference: false # Wormix
   objective: roles-antag-syndicate-agent-objective
-  guides: [ Traitors ]
+  guides: [Traitors]
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 1h
-  - !type:SpeciesRequirement # CorvaxGoob-Species
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+    - !type:SpeciesRequirement # CorvaxGoob-Species
       inverted: true
       species:
-      - Abductor
+        - Abductor
 
 - type: antag
   id: TraitorSleeper
   name: roles-antag-syndicate-agent-sleeper-name
   antagonist: true
-  setPreference: true
+  setPreference: false # Wormix
   objective: roles-antag-syndicate-agent-sleeper-objective
-  guides: [ Traitors ]
+  guides: [Traitors]
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 1h
-  - !type:SpeciesRequirement # CorvaxGoob-Species
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+    - !type:SpeciesRequirement # CorvaxGoob-Species
       inverted: true
       species:
-      - Abductor
+        - Abductor
 
 # Syndicate Operative Outfit - Monkey
 - type: startingGear
@@ -48,9 +48,9 @@
     gloves: ClothingHandsGlovesColorBlack
   storage:
     back:
-    - WeaponPistolViper
-    - PinpointerSyndicateNuclear
-    - DeathAcidifierImplanter
+      - WeaponPistolViper
+      - PinpointerSyndicateNuclear
+      - DeathAcidifierImplanter
 
 - type: startingGear
   id: SyndicateOperativeClothing
@@ -85,7 +85,7 @@
     - ToolboxSyndicateFilled
   storage:
     back:
-    - SyndicateJawsOfLife
+      - SyndicateJawsOfLife
 
 #Syndicate Operative Outfit - Basic
 - type: startingGear

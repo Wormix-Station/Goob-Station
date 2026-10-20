@@ -2,22 +2,22 @@
   id: MothershipCore
   name: roles-antag-mothership-core-name
   antagonist: true
-  setPreference: true
+  setPreference: false # Wormix
   objective: roles-antag-mothership-core-objective
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 18000  # 5 hrs
-  guides: [ Xenoborgs ]
+    - !type:RoleTimeRequirement
+      role: JobBorg
+      time: 18000 # 5 hrs
+  guides: [Xenoborgs]
 
 - type: antag
   id: Xenoborg
   name: roles-antag-xenoborg-name
   antagonist: true
-  setPreference: true
+  setPreference: false # Wormix
   objective: roles-antag-xenoborg-objective
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 18000  # 5 hrs
-  guides: [ Xenoborgs ]
+    - !type:RoleTimeRequirement
+      role: JobBorg
+      time: 18000 # 5 hrs
+  guides: [Xenoborgs]

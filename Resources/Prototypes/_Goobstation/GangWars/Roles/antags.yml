@@ -2,16 +2,16 @@
   id: GangLeader
   name: roles-antag-gang-leader-name
   antagonist: true
-  setPreference: true
+  setPreference: false # Wormix
   objective: roles-antag-gang-leader-objective
   requirements:
-  - !type:DepartmentTimeRequirement
+    - !type:DepartmentTimeRequirement
       department: Command
       time: 7200 # 2h
-  - !type:DepartmentTimeRequirement
+    - !type:DepartmentTimeRequirement
       department: Security
       time: 7200 # 2h
-  guides: [ GangWars ]
+  guides: [GangWars]
 
 - type: antag
   id: GangMember
@@ -19,4 +19,4 @@
   antagonist: true
   setPreference: false
   objective: roles-antag-gang-objective
-  guides: [ GangWars ]
+  guides: [GangWars]
