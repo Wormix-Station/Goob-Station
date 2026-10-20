@@ -62,7 +62,7 @@ public sealed partial class AdminVerbSystem
             Priority = -1,
             Text = eventRoleName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_DeadSpace/Interface/Misc/antag_icons.rsi"), "Event"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Wormix/Interface/Misc/antag_icons.rsi"), "Event"),
             Act = () =>
             {
                 if (HasComp<EventRoleComponent>(args.Target))
