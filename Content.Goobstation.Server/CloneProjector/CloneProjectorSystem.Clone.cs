@@ -11,6 +11,7 @@ using Content.Shared.Damage;
 using Content.Shared.Emp;
 using Content.Shared.Examine;
 using Content.Shared.Mobs;
+using Content.Shared.Nutrition.Components;
 using Content.Shared.Popups;
 using Content.Shared.Rejuvenate;
 
@@ -59,6 +60,7 @@ public partial class CloneProjectorSystem
 
     private void OnInit(Entity<HolographicCloneComponent> clone, ref MapInitEvent args)
     {
+        RemComp<ButcherableComponent>(clone);
         foreach (var part in _body.GetBodyChildren(clone))
         {
             if (!TryComp(part.Id, out WoundableComponent? woundable))
