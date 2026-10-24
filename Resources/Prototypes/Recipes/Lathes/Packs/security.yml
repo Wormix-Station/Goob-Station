@@ -66,6 +66,7 @@
   - MagazineRifleEmpty
   - SpeedLoaderMagnum
   - SpeedLoaderMagnumEmpty
+  - MagazineShotgunLeverRifleEmpty # Wormix-Edit
   # - ShrapnelPayload
 
 - type: latheRecipePack

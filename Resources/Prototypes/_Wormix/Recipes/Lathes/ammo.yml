@@ -1,0 +1,6 @@
+- type: latheRecipe
+  parent: BaseEmptyAmmoRecipe
+  id: MagazineShotgunLeverRifleEmpty
+  result: MagazineShotgunLeverRifleEmpty
+  materials:
+    Steel: 25
