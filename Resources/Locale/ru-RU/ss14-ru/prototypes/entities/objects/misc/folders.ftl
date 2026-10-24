@@ -91,6 +91,10 @@ ent-BoxFolderWhiteEmpty = { ent-BoxFolderBaseEmpty }
     .desc = { ent-BoxFolderBaseEmpty.desc }
     .suffix = Белый
 
+ent-BoxFolderBaseThreePapers = { ent-BoxFolderWhiteEmpty }
+    .desc = { ent-BoxFolderWhiteEmpty.desc }
+    .suffix = Белый, 3 листа бумаги
+
 ent-BoxFolderWhiteThreePapers = { ent-BoxFolderWhiteEmpty }
     .desc = { ent-BoxFolderWhiteEmpty.desc }
     .suffix = Белый, 3 листа бумаги
@@ -105,8 +109,21 @@ ent-BoxFolderCentComThreePapers = { ent-BoxFolderCentComEmpty }
 ent-BoxFolderClipboardEmpty = планшет
     .desc = Оружие тех, кто действует на передовой бюрократии.
 
+ent-BoxFolderClipboardThreePapers = { ent-BoxFolderClipboardEmpty }
+    .desc = { ent-BoxFolderClipboardEmpty.desc }
+    .suffix = 3 листа бумаги
+
 ent-BoxFolderPlasticClipboardEmpty = пластиковый планшет
     .desc = Дешёвый планшет из синего пластика. Для тех, кто ещё не готов держать бюрократическую мощь настоящего деревянного планшета.
 
+ent-BoxFolderPlasticClipboardThreePapers = { ent-BoxFolderPlasticClipboardEmpty }
+    .desc = { ent-BoxFolderPlasticClipboardThreePapers.desc }
+    .suffix = 3 листа бумаги
+
 ent-BoxFolderCentComClipboardEmpty = планшет Центком
     .desc = Роскошный планшет, обитый зелёным бархатом. Представители Центком часто носят его с собой, но редко используют.
+    
+
+ent-BoxFolderCentComClipboardThreePapers = { ent-BoxFolderCentComClipboardEmpty }
+    .desc = { ent-BoxFolderCentComClipboardEmpty.desc }
+    .suffix = 3 листа бумаги
