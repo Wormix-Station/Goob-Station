@@ -16,13 +16,14 @@
   id: MobChitinidSprites
   sprites:
     Head: MobChitinidHead
+    Hair: MobHumanoidAnyMarking #Wormix-Edit
     Snout: MobHumanoidAnyMarking
     Chest: MobChitinidChest
     Groin: MobChitinidGroin
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     ##UndergarmentTop: MobHumanoidAnyMarking # Wormix
-    ##UndergarmentBottom: MobHumanoidAnyMarking # Wormix 
+    ##UndergarmentBottom: MobHumanoidAnyMarking # Wormix
     Tail: MobHumanoidAnyMarking
     Eyes: MobChitinidEyes
     LArm: MobChitinidLArm
@@ -42,11 +43,12 @@
 
 - type: markingPoints
   id: MobChitinidMarkingLimits
-  onlyWhitelisted: true
+  onlyWhitelisted: false #Wormix-Edit
   points:
     Hair:
-      points: 0
+      points: 1 #Wormix-Edit
       required: false
+      defaultMarkings: [ HairBald ]
     FacialHair:
       points: 0
       required: false
