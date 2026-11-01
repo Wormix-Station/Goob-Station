@@ -28,3 +28,11 @@
     - DetectiveJackBoots
     - JackBoots
     - BootsWinterSec
+
+#ГСБ
+- type: loadoutGroup
+  id: HeadOfSecurityMask
+  name: loadout-group-hos-mask
+  minLimit: 0
+  loadouts:
+    - GasSwat

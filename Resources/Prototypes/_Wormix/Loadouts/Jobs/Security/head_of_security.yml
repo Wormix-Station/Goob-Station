@@ -11,12 +11,24 @@
     jumpsuit: ClothingUniformJumpskirtSecGrey
   groupBy: "jumpskirt"
 
+- type: loadout
+  id: JumpsuitHoSBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlue
+  groupBy: "jumpsuit"
+
 
 # Head
 - type: loadout
   id: HatCapHoS
   equipment:
     head: ClothingHeadHatCapHoS
+
+
+- type: loadout
+  id: GasSwat
+  equipment:
+    mask: ClothingMaskGasSwat
 
 
 # OuterClothing

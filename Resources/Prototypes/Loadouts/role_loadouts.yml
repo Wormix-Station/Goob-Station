@@ -677,6 +677,7 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - HeadofSecurityHead
+  - HeadOfSecurityMask
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack

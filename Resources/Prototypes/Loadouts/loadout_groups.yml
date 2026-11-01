@@ -1373,6 +1373,7 @@
     # Wormix-Edit
     - JumpsuitHoSGrey
     - JumpskirtSecGrey
+    - JumpsuitHoSBlue
     # CorvaxGoob-Loadouts-Start
     - HeadofSecurityJumpsuitBlack
     - HeadofSecurityJumpskirtBlack
@@ -1726,12 +1727,6 @@
     - LatexGloves
     - NitrileGloves
 
-- type: loadoutGroup
-  id: MedicalMask
-  name: loadout-group-medical-mask
-  minLimit: 0
-  loadouts:
-    - SterileMask
 
 - type: loadoutGroup
   id: MedicalDoctorJobTrinkets
