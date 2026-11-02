@@ -54,7 +54,7 @@
     pocket1: WeaponPistolMk58Empty # CorvaxGoob : поставлен пустой прототип пистолета
   storage:
     back:
-    - Flash
+    #- Flash # Wormix-Edit
     - MagazinePistol
     - MagazinePistolRubber # CorvaxGoob-RubberAmmo
 

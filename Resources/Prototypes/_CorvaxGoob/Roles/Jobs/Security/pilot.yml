@@ -43,7 +43,7 @@
     pocket1: WeaponPistolMk58Empty
   storage:
     back:
-    - Flash
+    #- Flash # Wormix-Edit
     - MagazinePistol
     - MagazinePistol
     - MagazinePistolRubber

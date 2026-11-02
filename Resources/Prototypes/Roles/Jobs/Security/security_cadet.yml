@@ -49,10 +49,7 @@
     #belt: ClothingBeltSecurityFilled # Wormix-Edit
     pocket1: Handcuffs # Wormix-Edit
     pocket2: BookSecurity
-  storage:
-    back:
-    - Flash
-    # Wormix-Edit
+
 
 - type: chameleonOutfit
   id: SecurityCadetChameleonOutfit

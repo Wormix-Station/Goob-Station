@@ -77,3 +77,11 @@
     - Sunglasses
     - HudSecurity
     - EyepatchHudSecurity
+
+#Средства самообороны
+- type: loadoutGroup
+  id: SelfDefense
+  name: loadout-group-self-defense
+  loadouts:
+    - SelfDefenseFlash
+    - SelfDefensePepperSpray

@@ -49,7 +49,7 @@
     #belt: ClothingBeltHolsterFilled # Wormix-Edit
   storage:
     back:
-    - Flash
+#   - Flash # Wormix-Edit
     - ForensicPad
     - ForensicScanner
 #   - ClothingMaskGasSecurity # Goobstation # CorvaxGoob-changes: commented
