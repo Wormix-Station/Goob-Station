@@ -26,3 +26,18 @@
   id: DetectiveLeatherShoes
   equipment:
     shoes: ClothingShoesLeather
+
+#Weapons
+- type: loadout
+  id: DetectiveWeaponInspector
+  dummyEntity: WeaponRevolverInspector
+  equipment:
+    pocket1: WeaponRevolverInspector
+  storage:
+    belt:
+    - SpeedLoaderMagnum
+
+- type: loadout
+  id: DetectiveWeaponEnergyMagnum
+  equipment:
+    pocket1: WeaponEnergyMagnumDetective

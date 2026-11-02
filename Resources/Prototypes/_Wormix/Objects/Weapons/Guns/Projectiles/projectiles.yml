@@ -1,0 +1,11 @@
+- type: entity
+  name: magnum window-piercing bolt
+  id: BulletLaserMagnumDetective
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaserWindowPiercingMagnum
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Heat: 30

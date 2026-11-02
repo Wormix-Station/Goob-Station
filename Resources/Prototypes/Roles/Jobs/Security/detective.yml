@@ -46,7 +46,7 @@
     id: DetectivePDA
     #gloves: ClothingHandsGlovesForensic - Goobstation, moved to loadouts
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    belt: ClothingBeltHolsterFilled
+    #belt: ClothingBeltHolsterFilled # Wormix-Edit
   storage:
     back:
     - Flash

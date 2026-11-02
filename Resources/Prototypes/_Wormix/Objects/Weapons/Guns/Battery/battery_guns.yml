@@ -1,0 +1,31 @@
+- type: entity
+  name: energy magnum
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
+  id: WeaponEnergyMagnumDetective
+  description: A high powered energy pistol designed for elite security personnel. This is an old model, and it does not support self-charging or switching between modes.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-unshaded-1
+      visible: false
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: BatteryAmmoProvider
+    proto: BulletLaserMagnumDetective
+    fireCost: 112.5

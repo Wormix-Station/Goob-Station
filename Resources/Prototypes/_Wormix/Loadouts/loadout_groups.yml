@@ -2,8 +2,6 @@
 - type: loadoutGroup
   id: DetectiveBackpack
   name: loadout-group-detective-backpack
-  minLimit: 0
-  maxLimit: 1
   loadouts:
     - SecurityBackpack
     - SecuritySatchel
@@ -28,6 +26,15 @@
     - DetectiveJackBoots
     - JackBoots
     - BootsWinterSec
+
+- type: loadoutGroup
+  id: DetectiveWeapon
+  name: loadout-group-detective-weapon
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - DetectiveWeaponInspector
+    - DetectiveWeaponEnergyMagnum
 
 #ГСБ
 - type: loadoutGroup
