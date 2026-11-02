@@ -43,7 +43,7 @@
   loadouts:
     - GasSwat
 
-#Офицер
+#Пояса
 - type: loadoutGroup
   id: SecurityBeltEmpty
   name: loadout-group-security-belt
@@ -60,3 +60,13 @@
   hidden: true
   loadouts:
     - SecurityBeltFillStandard
+
+# Очки
+- type: loadoutGroup
+  id: SecurityEyes
+  name: loadout-group-security-eyes
+  loadouts:
+    - GlassesSecurity
+    - Sunglasses
+    - HudSecurity
+    - EyepatchHudSecurity

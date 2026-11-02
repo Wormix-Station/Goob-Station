@@ -41,7 +41,7 @@
 - type: startingGear
   id: SecurityCadetGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity #Goobstation
+    #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
     shoes: ClothingShoesBootsJack # Goobstation edit
     #outerClothing: ClothingOuterArmorBasic # Goobstation
     id: SecurityCadetPDA

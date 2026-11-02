@@ -48,7 +48,7 @@
 - type: startingGear
   id: WardenGear
   equipment:
-    eyes: ClothingEyesGlassesSecurityContraDetect # Goobstation
+    #eyes: ClothingEyesGlassesSecurityContraDetect # Wormix-Edit
     id: WardenPDA
     ears: ClothingHeadsetAltWarden # Goobstation
     pocket1: WeaponPistolMk58Empty # CorvaxGoob : поставлен пустой прототип пистолета

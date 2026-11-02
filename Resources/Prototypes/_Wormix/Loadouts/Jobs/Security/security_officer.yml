@@ -47,3 +47,19 @@
   id: SecurityJudoBeltEmpty
   equipment:
     belt: ClothingBeltCorporateJudo
+
+# Eyes
+- type: loadout
+  id: GlassesSecurity
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+
+- type: loadout
+  id: HudSecurity
+  equipment:
+    eyes: ClothingEyesHudSecurity
+
+- type: loadout
+  id: EyepatchHudSecurity
+  equipment:
+    eyes: ClothingEyesEyepatchHudSecurity
