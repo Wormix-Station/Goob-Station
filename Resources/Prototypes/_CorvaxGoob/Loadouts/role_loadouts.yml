@@ -74,11 +74,11 @@
   - Inventory
   - PilotHead
   - SecurityEyes # Wormix-Edit
+  - SecurityNeck
   - PilotJumpsuit
   - SecurityBackpack
-  - SecurityMelee
   - SelfDefense # Wormix-Edit
-  - SecurityNeck
+  - SecurityMelee
   - PilotOuterClothing
   - SecurityBeltEmpty # Wormix-Edit
   - SecurityBeltFill # Wormix-Edit

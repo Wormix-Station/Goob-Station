@@ -125,17 +125,16 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - BrigmedicHead
-  #- MedicalMask
-  - BrigmedicMask # CorvaxGoob-Brigmedic-Loadout : Replaced from MedicalMask
   - BrigmedicGlasses # CorvaxGoob-loadouts
-  - BrigmedicJumpsuit
-  - BrigmedicOuterClothing
-  - MedicalGloves
-  - BrigmedicBackpack
-  - SecurityMelee # EE parity, make corpsman able to carry weapons like the rest of security
-  - SelfDefense # Wormix-Edit
-  - SecurityShoes
+  - BrigmedicMask # CorvaxGoob-Brigmedic-Loadout : Replaced from MedicalMask
   - SecurityNeck
+  - BrigmedicJumpsuit
+  - BrigmedicBackpack
+  - SelfDefense # Wormix-Edit
+  - SecurityMelee # EE parity, make corpsman able to carry weapons like the rest of security
+  - BrigmedicOuterClothing
+  - SecurityShoes
+  - MedicalGloves
   - SurvivalSecurity
   - Trinkets
   - BrigmedicJobTrinkets
