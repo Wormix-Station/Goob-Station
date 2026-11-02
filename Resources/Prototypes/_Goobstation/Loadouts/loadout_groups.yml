@@ -1549,6 +1549,7 @@
 - type: loadoutGroup
   id: SecurityGloves
   name: loadout-group-security-gloves
+  minLimit: 0 # Wormix-Edit
   loadouts:
   - BlackGloves
   - RedGloves
