@@ -14,7 +14,8 @@
   name: loadout-group-detective-belt
   loadouts:
     - DetectiveBeltHolster
-    - SecurityBelt
+    - SecurityBeltEmpty
+    - SecurityPistolHolsterEmpty
 
 - type: loadoutGroup
   id: DetectiveShoes
@@ -30,8 +31,6 @@
 - type: loadoutGroup
   id: DetectiveWeapon
   name: loadout-group-detective-weapon
-  minLimit: 1
-  maxLimit: 1
   loadouts:
     - DetectiveWeaponInspector
     - DetectiveWeaponEnergyMagnum
@@ -43,3 +42,21 @@
   minLimit: 0
   loadouts:
     - GasSwat
+
+#Офицер
+- type: loadoutGroup
+  id: SecurityBeltEmpty
+  name: loadout-group-security-belt
+  loadouts:
+    - SecurityBeltEmpty
+    - SecurityWebbingEmpty
+    - SecurityPistolHolsterEmpty
+    - SecurityJudoBeltEmpty
+
+#Наполнение поясов
+- type: loadoutGroup
+  id: SecurityBeltFill
+  name: loadout-group-security-belt-fill
+  hidden: true
+  loadouts:
+    - SecurityBeltFillStandard
