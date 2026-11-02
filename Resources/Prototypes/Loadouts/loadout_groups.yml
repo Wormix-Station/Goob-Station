@@ -1595,6 +1595,7 @@
   minLimit: 0
   loadouts:
     - LizardPlushieSecurityCadet
+    - SecStar # Wormix-Edit
 
 - type: loadoutGroup
   id: SurvivalSecurity
