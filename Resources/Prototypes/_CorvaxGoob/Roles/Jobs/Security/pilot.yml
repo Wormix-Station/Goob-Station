@@ -37,7 +37,7 @@
 - type: startingGear
   id: PilotGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
     id: PilotPDA
     ears: ClothingHeadsetAltSecurityRegular
     pocket1: WeaponPistolMk58Empty

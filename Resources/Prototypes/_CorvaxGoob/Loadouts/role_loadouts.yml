@@ -73,14 +73,17 @@
   groups:
   - Inventory
   - PilotHead
+  - SecurityEyes # Wormix-Edit
   - PilotJumpsuit
   - SecurityBackpack
   - SecurityMelee
   - SelfDefense # Wormix-Edit
   - SecurityNeck
   - PilotOuterClothing
-  - SecurityBelt
+  - SecurityBeltEmpty # Wormix-Edit
+  - SecurityBeltFill # Wormix-Edit
   - SecurityShoes
+  - SecurityGloves # Wormix-Edit
   - SurvivalSecurity
   - Trinkets
   - Animals
