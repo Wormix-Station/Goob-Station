@@ -801,13 +801,16 @@
   id: JobSecurityCadet
   groups:
   - Inventory # CorvaxGoob-loadouts
+  - SecurityHead #Wormix-Edit
   - SecurityEyes #Wormix-Edit
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SecurityMelee # Goobstation
   - SurvivalSecurity
   - SecurityNeck
+  - SecurityBeltStun #Wormix-Edit
   - SecurityOuterClothing # Goobstation - Why not.
+  - SecurityShoes # Wormix-Edit
   - Trinkets
   - SecurityCadetJobTrinkets
   - Animals # Goobstation

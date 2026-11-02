@@ -42,19 +42,17 @@
   id: SecurityCadetGear
   equipment:
     #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
-    shoes: ClothingShoesBootsJack # Goobstation edit
+    #shoes: ClothingShoesBootsJack # Wormix-Edit
     #outerClothing: ClothingOuterArmorBasic # Goobstation
     id: SecurityCadetPDA
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    belt: ClothingBeltSecurityFilled
-    #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
+    #belt: ClothingBeltSecurityFilled # Wormix-Edit
+    pocket1: Handcuffs # Wormix-Edit
     pocket2: BookSecurity
   storage:
     back:
     - Flash
-    - MagazinePistol # CorvaxGoob-RubberAmmo
-    - MagazinePistolRubber # CorvaxGoob-RubberAmmo
-    - MagazinePistol
+    # Wormix-Edit
 
 - type: chameleonOutfit
   id: SecurityCadetChameleonOutfit

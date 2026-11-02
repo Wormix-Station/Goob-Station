@@ -53,6 +53,13 @@
     - SecurityPistolHolsterEmpty
     - SecurityJudoBeltEmpty
 
+- type: loadoutGroup
+  id: SecurityBeltStun
+  name: loadout-group-security-stun
+  loadouts:
+    - SecurityBeltStunbaton
+    - SecurityBeltDisabler
+
 #Наполнение поясов
 - type: loadoutGroup
   id: SecurityBeltFill
