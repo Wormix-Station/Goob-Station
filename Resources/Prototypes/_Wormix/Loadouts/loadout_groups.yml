@@ -19,7 +19,7 @@
 
 - type: loadoutGroup
   id: DetectiveShoes
-  name: loadout-group-security-shoes
+  name: loadout-group-detective-shoes
   loadouts:
     - LaceupShoes
     - BrownShoes
