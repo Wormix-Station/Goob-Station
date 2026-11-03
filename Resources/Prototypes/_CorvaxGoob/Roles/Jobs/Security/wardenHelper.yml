@@ -33,14 +33,14 @@
 - type: startingGear
   id: WardenHelperGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity
     id: WardenHelperPDA
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58Empty
     pocket2: BookSpaceLaw
   storage:
     back:
-    - Flash
+    #- Flash # Wormix-Edit
     - MagazinePistol
     - MagazinePistol
     - MagazinePistolRubber

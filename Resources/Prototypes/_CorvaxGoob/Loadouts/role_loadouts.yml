@@ -46,15 +46,20 @@
   groups:
   - Inventory
   - WardenHead
+  - SecurityEyes # Wormix-Edit
+  - SecurityNeck # Wormix-Edit
   - WardenJumpsuit
   - WardenBackpack
+  - SelfDefense # Wormix-Edit
   - SecurityMelee
-  - SecurityNeck
-  - SecurityBelt
+  - SecurityBeltEmpty # Wormix-Edit
+  - SecurityBeltFill # Wormix-Edit
   - WardenOuterClothing
   - SecurityShoes
+  - SecurityGloves # Wormix-Edit
   - SurvivalSecurity
   - Trinkets
+  - WardenJobTrinkets # Wormix-Edit
   - Animals
   - GroupSpeciesBreathToolSecurity
   - WardenEnvirohelm
