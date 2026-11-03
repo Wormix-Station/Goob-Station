@@ -152,7 +152,7 @@
   - type: Repairable #Goob edit
     fuelCost: 5
     doAfterDelay: 3
-    selfRepairPenalty: 2.0
+    selfRepairPenalty: 30.0 # Wormix
     damage:
       types:
         Blunt: -15
