@@ -49,7 +49,7 @@ public sealed partial class HealingComponent : Component
     /// Delay multiplier when healing yourself.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float SelfHealPenaltyMultiplier = 2f; //Was 3f, changed due to Surgery Changes (Goobstation)
+    public float SelfHealPenaltyMultiplier = 25f; // Wormix self-heal is bad
 
     /// <summary>
     /// Sound played on healing begin.
