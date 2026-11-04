@@ -52,6 +52,7 @@
   - WardenBackpack
   - SelfDefense # Wormix-Edit
   - SecurityMelee
+  - SecurityWeapon # Wormix-Edit
   - SecurityBeltEmpty # Wormix-Edit
   - SecurityBeltFill # Wormix-Edit
   - WardenOuterClothing
@@ -84,6 +85,7 @@
   - SecurityBackpack
   - SelfDefense # Wormix-Edit
   - SecurityMelee
+  - SecurityWeapon # Wormix-Edit
   - PilotOuterClothing
   - SecurityBeltEmpty # Wormix-Edit
   - SecurityBeltFill # Wormix-Edit

@@ -63,3 +63,25 @@
   id: EyepatchHudSecurity
   equipment:
     eyes: ClothingEyesEyepatchHudSecurity
+
+# Оружие СБ
+- type: loadout
+  id: PistolMk58
+  dummyEntity: WeaponPistolMk58
+  equipment:
+    pocket1: WeaponPistolMk58Empty
+  storage:
+    back:
+    - MagazinePistol
+    - MagazinePistol
+    - MagazinePistolRubber
+
+- type: loadout
+  id: PistolMk58Rubber
+  dummyEntity: WeaponPistolMk58
+  equipment:
+    pocket1: WeaponPistolMk58Empty
+  storage:
+    back:
+    - MagazinePistolRubber
+    - MagazinePistolRubber

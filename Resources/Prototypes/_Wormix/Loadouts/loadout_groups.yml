@@ -85,3 +85,12 @@
   loadouts:
     - SelfDefenseFlash
     - SelfDefensePepperSpray
+
+# Оружие СБ
+- type: loadoutGroup
+  id: SecurityWeapon
+  name: loadout-group-security-weapon
+  hidden: true
+  loadouts:
+    - PistolMk58
+    - PistolMk58Rubber

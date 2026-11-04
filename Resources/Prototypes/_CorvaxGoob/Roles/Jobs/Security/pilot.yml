@@ -40,13 +40,6 @@
     #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
     id: PilotPDA
     ears: ClothingHeadsetAltSecurityRegular
-    pocket1: WeaponPistolMk58Empty
-  storage:
-    back:
-    #- Flash # Wormix-Edit
-    - MagazinePistol
-    - MagazinePistol
-    - MagazinePistolRubber
 
 - type: chameleonOutfit
   id: PilotChameleonOutfit

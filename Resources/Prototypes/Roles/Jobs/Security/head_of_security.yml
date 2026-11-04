@@ -58,13 +58,6 @@
     id: HoSPDA
     #gloves: ClothingHandsGlovesCombat - Goobstation, moved to loadouts
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk58Empty # CorvaxGoob : поставлен пустой прототип пистолета
-  storage:
-    back:
-    #- Flash # Wormix-Edit
-    - MagazinePistol
-    - MagazinePistol # CorvaxGoob-RubberAmmo
-    - MagazinePistolRubber # CorvaxGoob-RubberAmmo
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

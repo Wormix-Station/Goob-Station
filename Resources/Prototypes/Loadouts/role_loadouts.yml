@@ -684,6 +684,7 @@
   - SecurityBackpack
   - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
+  - SecurityWeapon # Wormix-Edit
   - SecurityBeltEmpty # Wormix-Edit
   - SecurityBeltFill # Wormix-Edit
   - HeadofSecurityOuterClothing
@@ -716,6 +717,7 @@
   - WardenBackpack # CorvaxGoobChanges: SecurityBackpack > WardenBackpack
   - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
+  - SecurityWeapon # Wormix-Edit
   - SecurityBeltEmpty # Wormix-Edit
   - SecurityBeltFill # Wormix-Edit
   - WardenOuterClothing
@@ -748,6 +750,7 @@
   - SecurityBackpack
   - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
+  - SecurityWeapon # Wormix-Edit
   - SecurityOuterClothing
   - SecurityShoes
   - SecurityGloves #goob
