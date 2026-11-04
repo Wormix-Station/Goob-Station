@@ -56,8 +56,8 @@
   # - type: BatterySlotRequiresLock
   #   itemSlot: cell_slot
   - type: Battery # Power cell slot replaced with high capacity battery
-    maxCharge: 1080
-    startingCharge: 1080
+    maxCharge: 1512 # Wormix
+    startingCharge: 1512 # Wormix
   # Goobstation End - Energycrit
   - type: EncryptionHolderRequiresLock
   #- Goobstation - Energycrit
@@ -119,7 +119,7 @@
   - type: Silicon
     entityType: enum.SiliconType.Player
     batteryPowered: true
-    drainPerSecond: 1.5
+    drainPerSecond: 1.3 # Wormix
     chargeThresholdMid: 0.80
     chargeThresholdLow: 0.35
     chargeThresholdCritical: 0.10
@@ -152,7 +152,7 @@
   - type: Repairable #Goob edit
     fuelCost: 5
     doAfterDelay: 3
-    selfRepairPenalty: 2.0
+    selfRepairPenalty: 30.0 # Wormix
     damage:
       types:
         Blunt: -15

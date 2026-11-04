@@ -1,33 +1,33 @@
 - type: gameMapPool
   id: CorvaxMapPool
   maps:
-  # Highpop 55+
-  - CorvaxAstra
-  #- CorvaxAvrite
-  - CorvaxBox
-  - CorvaxChloris
-  - CorvaxDelta
-  - CorvaxGlacier
-  - CorvaxPilgrim
+    # Highpop 55+
+    - CorvaxAstra
+    #- CorvaxAvrite
+    - CorvaxBox
+    - CorvaxChloris
+    - CorvaxDelta
+    - CorvaxGlacier
+    - CorvaxPilgrim
 
-  # Midpop 25–55
-  # - CorvaxAmber
-  #- CorvaxAwesome
-  - CorvaxBagel
-  - CorvaxMarathon
-  - CorvaxMascara
-  - CorvaxOutpost
-  - CorvaxPaper
-  #- CorvaxPearl
-  - CorvaxVoid
+    # Midpop 25–55
+    # - CorvaxAmber
+    #- CorvaxAwesome
+    - CorvaxBagel
+    - CorvaxMarathon
+    - CorvaxMascara
+    - CorvaxOutpost
+    - CorvaxPaper
+    #- CorvaxPearl
+    - CorvaxVoid
 
-  # Lowpop 0–25
-  - CorvaxMaus
-  - CorvaxOmega
-  - CorvaxPacked
-  #- CorvaxSilly
-  - CorvaxTushkan
-  - CorvaxCluster
-  - WormixOrbital
-  - WormixSilly
-
+    # Lowpop 0–25
+    - CorvaxMaus
+    - CorvaxOmega
+    - CorvaxPacked
+    #- CorvaxSilly
+    - CorvaxTushkan
+    - CorvaxCluster
+    # Wormix maps
+    - WormixOrbital
+    - WormixSilly

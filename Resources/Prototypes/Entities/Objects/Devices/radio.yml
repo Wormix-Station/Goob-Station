@@ -1,29 +1,52 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+#Wormix-Edit
 - type: entity
   name: handheld radio
   description: A handy handheld radio.
   parent: BaseItem
-  id: RadioHandheld
+  id: RadioHandheldEmpty
   components:
   - type: TelecomExempt
   - type: RadioMicrophone
-    broadcastChannel: Handheld
+    toggleOnInteract: false
   - type: RadioSpeaker
-    channels:
-    - Handheld
-  - type: ListenBlacklist # Goobstation - annoying as shit
-    blacklist:
-      components:
-      - Advertise
+    toggleOnInteract: false
   - type: Speech
     speechVerb: Robotic
+  - type: EncryptionKeyHolder
+    keySlots: 3
+  - type: ActivatableUI
+    key: enum.IntercomUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.IntercomUiKey.Key:
+        type: IntercomBoundUserInterface
+  - type: Intercom
   - type: Sprite
     sprite: Objects/Devices/communication.rsi
     layers:
-    - state: walkietalkie
+    - state: walkietalkie-off
     - state: walkietalkie-on
-    state: walkietalkie
+      map: ["enum.RadioDeviceVisualLayers.Broadcasting"]
+      shader: unshaded
+      visible: false
+    - state: walkietalkie-active
+      map: ["enum.RadioDeviceVisualLayers.Speaker"]
+      shader: unshaded
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.RadioDeviceVisuals.Broadcasting:
+        enum.RadioDeviceVisualLayers.Broadcasting:
+          True: { visible: true }
+          False: { visible: false }
+      enum.RadioDeviceVisuals.Speaker:
+        enum.RadioDeviceVisualLayers.Speaker:
+          True: { visible: true }
+          False: { visible: false }
   - type: Item
     sprite: Objects/Devices/communication.rsi
     heldPrefix: walkietalkie
@@ -32,19 +55,39 @@
     - Radio
 
 - type: entity
-  name: security radio
+  name: handheld radio
+  description: A handy handheld radio.
+  parent: RadioHandheldEmpty
+  id: RadioHandheld
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyHandheld
+
+- type: entity
+  name: security radio copy
   description: A handy security radio.
-  parent: [ RadioHandheld, BaseSecurityContraband ]
+  parent: [ RadioHandheldEmpty, BaseSecurityContraband ]
   id: RadioHandheldSecurity
   components:
-  - type: RadioMicrophone
-    broadcastChannel: Security
-    listenRange: 1
-  - type: RadioSpeaker
-    channels:
-    - Security
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
   - type: Sprite
     sprite: Objects/Devices/securityhandy.rsi
+    layers:
+    - state: walkietalkie-off
+    - state: walkietalkie-on
+      map: ["enum.RadioDeviceVisualLayers.Broadcasting"]
+      shader: unshaded
+      visible: false
+    - sprite: Objects/Devices/communication.rsi
+      state: walkietalkie-active
+      map: ["enum.RadioDeviceVisualLayers.Speaker"]
+      shader: unshaded
+      visible: false
   - type: Item
     sprite: Objects/Devices/securityhandy.rsi
     heldPrefix: walkietalkie
