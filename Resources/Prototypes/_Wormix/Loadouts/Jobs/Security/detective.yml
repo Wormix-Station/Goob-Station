@@ -41,3 +41,12 @@
   id: DetectiveWeaponEnergyMagnum
   equipment:
     pocket1: WeaponEnergyMagnumDetective
+
+- type: loadout
+  id: DetectiveWeaponDeckard
+  dummyEntity: WeaponRevolverDeckard
+  equipment:
+    pocket1: WeaponRevolverDeckard
+  storage:
+    belt:
+    - SpeedLoaderMagnum

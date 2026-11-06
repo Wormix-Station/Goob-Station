@@ -85,3 +85,15 @@
     back:
     - MagazinePistolRubber
     - MagazinePistolRubber
+
+- type: loadout
+  id: RevolverDeckard
+  dummyEntity: WeaponRevolverDeckard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    pocket1: WeaponRevolverDeckard
+  storage:
+    back:
+    - SpeedLoaderMagnum

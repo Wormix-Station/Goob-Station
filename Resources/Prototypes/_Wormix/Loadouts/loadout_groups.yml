@@ -33,6 +33,7 @@
   name: loadout-group-detective-weapon
   loadouts:
     - DetectiveWeaponInspector
+    - DetectiveWeaponDeckard
     - DetectiveWeaponEnergyMagnum
 
 #ГСБ
@@ -90,7 +91,7 @@
 - type: loadoutGroup
   id: SecurityWeapon
   name: loadout-group-security-weapon
-  hidden: true
+  #hidden: true
   loadouts:
     - PistolMk58
-    - PistolMk58Rubber
+    - RevolverDeckard
