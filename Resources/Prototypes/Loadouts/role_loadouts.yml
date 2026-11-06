@@ -677,7 +677,7 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - HeadofSecurityHead
-  - SecurityEyes #Wormix-Edit
+  - SecurityEyes # Wormix-Edit
   - HeadOfSecurityMask
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
@@ -711,7 +711,7 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - WardenHead
-  - SecurityEyes #Wormix-Edit
+  - SecurityEyes # Wormix-Edit
   - SecurityNeck
   - WardenJumpsuit
   - WardenBackpack # CorvaxGoobChanges: SecurityBackpack > WardenBackpack
@@ -744,7 +744,7 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - SecurityHead
-  - SecurityEyes #Wormix-Edit
+  - SecurityEyes # Wormix-Edit
   - SecurityNeck
   - SecurityJumpsuit
   - SecurityBackpack
@@ -808,14 +808,14 @@
   id: JobSecurityCadet
   groups:
   - Inventory # CorvaxGoob-loadouts
-  - SecurityHead #Wormix-Edit
-  - SecurityEyes #Wormix-Edit
+  - SecurityHead # Wormix-Edit
+  - SecurityEyes # Wormix-Edit
   - SecurityNeck
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
-  - SecurityBeltStun #Wormix-Edit
+  - SecurityBeltStun # Wormix-Edit
   - SecurityOuterClothing # Goobstation - Why not.
   - SecurityShoes # Wormix-Edit
   - SecurityGloves # Wormix-Edit

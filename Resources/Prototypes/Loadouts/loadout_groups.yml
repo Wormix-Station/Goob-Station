@@ -1456,9 +1456,9 @@
     - SecurityHelmetAlt # Goobstation
     - SecurityBeret
     - SecurityHat
-    - HeadBandRed
+    - HeadBandRed # Wormix-Edit
     - TrooperHat
-    - SideCap
+    - SideCap # Wormix-Edit
 
 - type: loadoutGroup
   id: SecurityJumpsuit
@@ -1500,7 +1500,7 @@
   loadouts:
     - ArmorVest
     - ArmorVestSlim
-    - SecurityOvercoat
+    - SecurityOvercoat # Wormix-Edit
     - WinterSec # Wormix-Edit
     - WinterCoatSeniorSecArmored # Goobstation
     - VeteranOfficerArmor # Goobstation

@@ -1,16 +1,16 @@
-# Head
+# Головные уборы
 - type: loadout # Goobstation
   id: HeadBandRed
   equipment:
     head: ClothingHeadBandRed
 
-# Jumpsuit
+# Комбинезоны
 - type: loadout
   id: JumpsuitSecBlue
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecBlue
 
-# Outerclothing
+# Верхняя одежда
 - type: loadout
   id: WinterSec
   equipment:
@@ -21,13 +21,13 @@
   equipment:
     outerClothing: ClothingOuterCoatSecurityOvercoat
 
-# Shoes
+# Обувь
 - type: loadout
   id: BootsWinterSec
   equipment:
     shoes: ClothingShoesBootsWinterSec
 
-# Belt
+# Пояса
 - type: loadout
   id: SecurityBeltEmpty
   equipment:
@@ -48,7 +48,7 @@
   equipment:
     belt: ClothingBeltCorporateJudo
 
-# Eyes
+# Очки
 - type: loadout
   id: GlassesSecurity
   equipment:

@@ -1,22 +1,22 @@
-# Head
+# Головные уборы
 - type: loadout
   id: DetectiveFedoraOld
   equipment:
     head: ADTClothingHeadOldFedora
 
-#Belt
+# Пояса
 - type: loadout
   id: DetectiveBeltHolster
   equipment:
     belt: ClothingBeltHolster
 
-#Back
+# Рюкзаки и сумки
 - type: loadout
   id: DetectiveSatchelLeather
   equipment:
     back: ClothingBackpackSatchelLeather
 
-#Boots
+# Обувь
 - type: loadout
   id: DetectiveJackBoots
   equipment:
@@ -27,7 +27,7 @@
   equipment:
     shoes: ClothingShoesLeather
 
-#Weapons
+# Оружие детектива
 - type: loadout
   id: DetectiveWeaponInspector
   dummyEntity: WeaponRevolverInspector

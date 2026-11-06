@@ -1,4 +1,4 @@
-# Jumpsuit
+# Комбинезоны
 - type: loadout
   id: JumpsuitHoSGrey
   equipment:
@@ -18,20 +18,20 @@
   groupBy: "jumpsuit"
 
 
-# Head
+# Головные уборы
 - type: loadout
   id: HatCapHoS
   equipment:
     head: ClothingHeadHatCapHoS
 
-
+# Маски
 - type: loadout
   id: GasSwat
   equipment:
     mask: ClothingMaskGasSwat
 
 
-# OuterClothing
+# Верхняя одежда
 - type: loadout
   id: CoatHoSGreatcoat
   equipment:

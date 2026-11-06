@@ -36,7 +36,7 @@
     - DetectiveWeaponDeckard
     - DetectiveWeaponEnergyMagnum
 
-#ГСБ
+# ГСБ
 - type: loadoutGroup
   id: HeadOfSecurityMask
   name: loadout-group-hos-mask
@@ -44,7 +44,7 @@
   loadouts:
     - GasSwat
 
-#Пояса
+# Пояса
 - type: loadoutGroup
   id: SecurityBeltEmpty
   name: loadout-group-security-belt
@@ -61,7 +61,7 @@
     - SecurityBeltStunbaton
     - SecurityBeltDisabler
 
-#Наполнение поясов
+# Наполнение поясов
 - type: loadoutGroup
   id: SecurityBeltFill
   name: loadout-group-security-belt-fill
@@ -69,7 +69,7 @@
   loadouts:
     - SecurityBeltFillStandard
 
-# Очки
+# Очки CБ
 - type: loadoutGroup
   id: SecurityEyes
   name: loadout-group-security-eyes
@@ -79,7 +79,7 @@
     - HudSecurity
     - EyepatchHudSecurity
 
-#Средства самообороны
+# Средства самообороны
 - type: loadoutGroup
   id: SelfDefense
   name: loadout-group-self-defense
@@ -91,7 +91,6 @@
 - type: loadoutGroup
   id: SecurityWeapon
   name: loadout-group-security-weapon
-  #hidden: true
   loadouts:
     - PistolMk58
     - RevolverDeckard
