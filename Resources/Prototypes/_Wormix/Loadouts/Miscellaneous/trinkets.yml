@@ -1,17 +1,17 @@
 # канцелярия
-- type: loadout
-  id: BoxFolderClipboard
-  storage:
-    back:
-    - BoxFolderClipboard
-  groupBy: "bureaucracy"
+#- type: loadout
+#  id: BoxFolderClipboard
+#  storage:
+#    back:
+#    - BoxFolderClipboard
+#  groupBy: "bureaucracy"
 
 - type: loadout
   id: LuxuryPen
   storage:
     back:
     - LuxuryPen
-  groupBy: "bureaucracy"
+  groupBy: "folders" #"bureaucracy"
 
 # кружки
 - type: loadout

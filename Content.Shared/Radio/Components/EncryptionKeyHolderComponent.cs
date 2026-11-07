@@ -12,13 +12,13 @@ namespace Content.Shared.Radio.Components;
 /// <summary>
 ///     This component is by entities that can contain encryption keys
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState] // Wormix Edit
 public sealed partial class EncryptionKeyHolderComponent : Component
 {
     /// <summary>
     ///     Whether or not encryption keys can be removed from the headset.
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField] // Wormix Edit
     public bool KeysUnlocked = true;
 
     /// <summary>

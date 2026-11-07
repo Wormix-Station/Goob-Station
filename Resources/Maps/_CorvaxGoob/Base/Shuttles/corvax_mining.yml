@@ -429,7 +429,7 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-- proto: ComputerShuttleSalvage
+- proto: ComputerShuttle
   entities:
   - uid: 9
     components:

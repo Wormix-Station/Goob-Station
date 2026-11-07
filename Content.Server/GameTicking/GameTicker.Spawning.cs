@@ -172,7 +172,10 @@ namespace Content.Server.GameTicking
                 return;
 
             if (jobId != null && await IsJobAllow(player, jobId))
+            {
                 SpawnPlayer(player, character, station, jobId, lateJoin, silent);
+                return;
+            }
             // Wormix
 
             if (jobId != null)

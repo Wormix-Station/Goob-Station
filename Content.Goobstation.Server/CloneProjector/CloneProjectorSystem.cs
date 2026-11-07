@@ -398,6 +398,13 @@ public sealed partial class CloneProjectorSystem : SharedCloneProjectorSystem
                 && spawnedItemNullable is { } spawnedItem )
             {
                 EnsureComp<UnremoveableComponent>(spawnedItem);
+
+                if (TryComp<EncryptionKeyHolderComponent>(spawnedItem, out var holder)) // Wormix Edit
+                {
+                    holder.KeysUnlocked = false;
+                    Dirty(spawnedItem, holder);
+                }
+
                 if (!TryComp<ItemSlotsComponent>(spawnedItem, out var itemSlots))
                     continue;
 

@@ -98,6 +98,8 @@ namespace Content.Server.Administration.UI
                             if (!TryGetMapTarget(doAnnounce.TargetGrid, out var filter, out targetLog))
                                 break;
 
+                            announcementWithSignature = announcementWithSignature.Replace("${station}", StationNameFormatter.Format(targetLog)); // Wormix edit
+
                             DispatchFilteredAnnouncement(doAnnounce, filter, announcementWithSignature, sender, color, sound);
                             break;
                         }

@@ -517,6 +517,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
         }
 
+
         if (!TryComp<StationDataComponent>(station, out var stationDataComp)) return;
 
         var filter = _stationSystem.GetInStation(stationDataComp);
