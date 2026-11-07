@@ -54,17 +54,10 @@
 - type: startingGear
   id: HoSGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
     id: HoSPDA
     #gloves: ClothingHandsGlovesCombat - Goobstation, moved to loadouts
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk58Empty # CorvaxGoob : поставлен пустой прототип пистолета
-  storage:
-    back:
-    - Flash
-    - MagazinePistol
-    - MagazinePistol # CorvaxGoob-RubberAmmo
-    - MagazinePistolRubber # CorvaxGoob-RubberAmmo
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

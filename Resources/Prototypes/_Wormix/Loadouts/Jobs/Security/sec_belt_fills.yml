@@ -1,0 +1,10 @@
+- type: loadout
+  id: SecurityBeltFillStandard
+  dummyEntity: ClothingBeltSecurityFilled
+  storage:
+    belt:
+    - WeaponDisabler
+    - Handcuffs
+    - Handcuffs
+    - HoloprojectorSecurity
+    - RadioHandheldSecurity

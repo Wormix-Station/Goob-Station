@@ -1,0 +1,99 @@
+# Головные уборы
+- type: loadout # Goobstation
+  id: HeadBandRed
+  equipment:
+    head: ClothingHeadBandRed
+
+# Комбинезоны
+- type: loadout
+  id: JumpsuitSecBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+
+# Верхняя одежда
+- type: loadout
+  id: WinterSec
+  equipment:
+    outerClothing: ClothingOuterWinterSec
+
+- type: loadout
+  id: SecurityOvercoat
+  equipment:
+    outerClothing: ClothingOuterCoatSecurityOvercoat
+
+# Обувь
+- type: loadout
+  id: BootsWinterSec
+  equipment:
+    shoes: ClothingShoesBootsWinterSec
+
+# Пояса
+- type: loadout
+  id: SecurityBeltEmpty
+  equipment:
+    belt: ClothingBeltSecurity
+
+- type: loadout
+  id: SecurityWebbingEmpty
+  equipment:
+    belt: ClothingBeltSecurityWebbing
+
+- type: loadout
+  id: SecurityPistolHolsterEmpty
+  equipment:
+    belt: ClothingBeltPistolHolster
+
+- type: loadout
+  id: SecurityJudoBeltEmpty
+  equipment:
+    belt: ClothingBeltCorporateJudo
+
+# Очки
+- type: loadout
+  id: GlassesSecurity
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+
+- type: loadout
+  id: HudSecurity
+  equipment:
+    eyes: ClothingEyesHudSecurity
+
+- type: loadout
+  id: EyepatchHudSecurity
+  equipment:
+    eyes: ClothingEyesEyepatchHudSecurity
+
+# Оружие СБ
+- type: loadout
+  id: PistolMk58
+  dummyEntity: WeaponPistolMk58
+  equipment:
+    pocket1: WeaponPistolMk58Empty
+  storage:
+    back:
+    - MagazinePistol
+    - MagazinePistol
+    - MagazinePistolRubber
+
+- type: loadout
+  id: PistolMk58Rubber
+  dummyEntity: WeaponPistolMk58
+  equipment:
+    pocket1: WeaponPistolMk58Empty
+  storage:
+    back:
+    - MagazinePistolRubber
+    - MagazinePistolRubber
+
+- type: loadout
+  id: RevolverDeckard
+  dummyEntity: WeaponRevolverDeckard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    pocket1: WeaponRevolverDeckard
+  storage:
+    back:
+    - SpeedLoaderMagnum

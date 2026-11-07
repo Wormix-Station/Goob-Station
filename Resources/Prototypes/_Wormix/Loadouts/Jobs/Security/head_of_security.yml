@@ -1,0 +1,38 @@
+# Комбинезоны
+- type: loadout
+  id: JumpsuitHoSGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSGrey
+  groupBy: "jumpsuit"
+
+- type: loadout
+  id: JumpskirtSecGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecGrey
+  groupBy: "jumpskirt"
+
+- type: loadout
+  id: JumpsuitHoSBlue
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlue
+  groupBy: "jumpsuit"
+
+
+# Головные уборы
+- type: loadout
+  id: HatCapHoS
+  equipment:
+    head: ClothingHeadHatCapHoS
+
+# Маски
+- type: loadout
+  id: GasSwat
+  equipment:
+    mask: ClothingMaskGasSwat
+
+
+# Верхняя одежда
+- type: loadout
+  id: CoatHoSGreatcoat
+  equipment:
+    outerClothing: ClothingOuterCoatHoSGreatcoat

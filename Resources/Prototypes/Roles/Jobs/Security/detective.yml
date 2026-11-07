@@ -42,14 +42,14 @@
 - type: startingGear
   id: DetectiveGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
     id: DetectivePDA
     #gloves: ClothingHandsGlovesForensic - Goobstation, moved to loadouts
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
-    belt: ClothingBeltHolsterFilled
+    #belt: ClothingBeltHolsterFilled # Wormix-Edit
   storage:
     back:
-    - Flash
+#   - Flash # Wormix-Edit
     - ForensicPad
     - ForensicScanner
 #   - ClothingMaskGasSecurity # Goobstation # CorvaxGoob-changes: commented

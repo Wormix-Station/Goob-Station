@@ -1,0 +1,96 @@
+# Детектив
+- type: loadoutGroup
+  id: DetectiveBackpack
+  name: loadout-group-detective-backpack
+  loadouts:
+    - SecurityBackpack
+    - SecuritySatchel
+    - SecurityDuffel
+    - SecurityMessenger
+    - DetectiveSatchelLeather
+
+- type: loadoutGroup
+  id: DetectiveBelt
+  name: loadout-group-detective-belt
+  loadouts:
+    - DetectiveBeltHolster
+    - SecurityBeltEmpty
+    - SecurityPistolHolsterEmpty
+
+- type: loadoutGroup
+  id: DetectiveShoes
+  name: loadout-group-detective-shoes
+  loadouts:
+    - LaceupShoes
+    - BrownShoes
+    - DetectiveLeatherShoes
+    - DetectiveJackBoots
+    - JackBoots
+    - BootsWinterSec
+
+- type: loadoutGroup
+  id: DetectiveWeapon
+  name: loadout-group-detective-weapon
+  loadouts:
+    - DetectiveWeaponInspector
+    - DetectiveWeaponDeckard
+    - DetectiveWeaponEnergyMagnum
+
+# ГСБ
+- type: loadoutGroup
+  id: HeadOfSecurityMask
+  name: loadout-group-hos-mask
+  minLimit: 0
+  loadouts:
+    - GasSwat
+
+# Пояса
+- type: loadoutGroup
+  id: SecurityBeltEmpty
+  name: loadout-group-security-belt
+  loadouts:
+    - SecurityBeltEmpty
+    - SecurityWebbingEmpty
+    - SecurityPistolHolsterEmpty
+    - SecurityJudoBeltEmpty
+
+- type: loadoutGroup
+  id: SecurityBeltStun
+  name: loadout-group-security-stun
+  loadouts:
+    - SecurityBeltStunbaton
+    - SecurityBeltDisabler
+
+# Наполнение поясов
+- type: loadoutGroup
+  id: SecurityBeltFill
+  name: loadout-group-security-belt-fill
+  hidden: true
+  loadouts:
+    - SecurityBeltFillStandard
+
+# Очки CБ
+- type: loadoutGroup
+  id: SecurityEyes
+  name: loadout-group-security-eyes
+  loadouts:
+    - GlassesSecurity
+    - Sunglasses
+    - HudSecurity
+    - EyepatchHudSecurity
+
+# Средства самообороны
+- type: loadoutGroup
+  id: SelfDefense
+  name: loadout-group-self-defense
+  loadouts:
+    - SelfDefenseFlash
+    - SelfDefensePepperSpray
+
+# Оружие СБ
+- type: loadoutGroup
+  id: SecurityWeapon
+  name: loadout-group-security-weapon
+  loadouts:
+    - PistolMk58
+    - RevolverDeckard

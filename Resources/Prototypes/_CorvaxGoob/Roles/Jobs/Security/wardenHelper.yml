@@ -33,17 +33,10 @@
 - type: startingGear
   id: WardenHelperGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity
     id: WardenHelperPDA
     ears: ClothingHeadsetSecurity
-    pocket1: WeaponPistolMk58Empty
     pocket2: BookSpaceLaw
-  storage:
-    back:
-    - Flash
-    - MagazinePistol
-    - MagazinePistol
-    - MagazinePistolRubber
 
 - type: chameleonOutfit
   id: WardenHelperChameleonOutfit

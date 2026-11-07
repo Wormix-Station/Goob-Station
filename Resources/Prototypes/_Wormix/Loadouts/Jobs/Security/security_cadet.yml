@@ -1,0 +1,10 @@
+# Нелетальное оружие на слот пояса
+- type: loadout
+  id: SecurityBeltDisabler
+  equipment:
+    belt: WeaponDisabler
+
+- type: loadout
+  id: SecurityBeltStunbaton
+  equipment:
+    belt: Stunbaton
