@@ -30,6 +30,7 @@
     TailBehindBackpack: MobHumanoidAnyMarking #imp
     Head: MobMothHead
     Face: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking #Wormix-Edit
     Snout: MobHumanoidAnyMarking
 #    Underwear: MobHumanoidAnyMarking # Orion-Edit: Removed
 #    Undershirt: MobHumanoidAnyMarking # Orion-Edit: Removed
@@ -56,11 +57,12 @@
 
 - type: markingPoints
   id: MobMothMarkingLimits
-  onlyWhitelisted: true
+  onlyWhitelisted: false #Wormix-Edit
   points:
     Hair:
-      points: 0
+      points: 1 #Wormix-Edit
       required: false
+      defaultMarkings: [ HairBald ]
     FacialHair:
       points: 0
       required: false

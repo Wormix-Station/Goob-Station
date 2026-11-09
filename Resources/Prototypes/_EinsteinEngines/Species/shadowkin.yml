@@ -33,6 +33,7 @@
   id: MobShadowkinSprites
   sprites:
     Head: MobShadowkinHead
+    Hair: MobHumanoidAnyMarking #Wormix-Edit
     Snout: MobShadowkinAnyMarkingFollowSkin
     HeadTop: MobShadowkinAnyMarking
     HeadSide: MobShadowkinAnyMarkingFollowSkin
@@ -53,7 +54,12 @@
 
 - type: markingPoints
   id: MobShadowkinMarkingLimits
+  onlyWhitelisted: false #Wormix-Edit
   points:
+    Hair:
+      points: 1 #Wormix-Edit
+      required: false
+      defaultMarkings: [ HairBald ]
     Tail:
       points: 1
       required: true

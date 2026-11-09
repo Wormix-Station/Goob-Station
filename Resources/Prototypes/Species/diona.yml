@@ -21,6 +21,7 @@
     TailBehind: MobHumanoidAnyMarking # floof
     TailOversuit: MobHumanoidAnyMarking # floof
     Head: MobDionaHead
+    Hair: MobHumanoidAnyMarking #Wormix-Edit
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
 #    Underwear: MobHumanoidAnyMarking # Orion-Edit: Removed
@@ -39,8 +40,12 @@
 
 - type: markingPoints
   id: MobDionaMarkingLimits
-  onlyWhitelisted: true
+  onlyWhitelisted: false #Wormix-Edit
   points:
+    Hair:
+      points: 1 #Wormix-Edit
+      required: false
+      defaultMarkings: [ HairBald ]
     Head:
       points: 4
       required: false
