@@ -3,12 +3,14 @@
   id: HeadofSecurityJumpsuitBlack
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSBlack
+  groupBy: "jumpsuit" # Wormix-Edit
 
 - type: loadout
   id: HeadofSecurityJumpskirtBlack
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoSBlack
-    
+  groupBy: "jumpskirt" # Wormix-Edit
+
 #Shoulder Mantle
 - type: loadout
   id: ClothingNeckMantleHOSShoulder

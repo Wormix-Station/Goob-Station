@@ -1422,8 +1422,11 @@
   name: loadout-group-hos-shoes
   loadouts:
   - JackBoots
-  - SecurityWinterBoots
+  - CombatBoots # Wormix-Edit
+  - ClothingShoesSwatBoots # Wormix-Edit
   - AdvancedJackBoots
+  - BootsWinterSec # Wormix-Edit
+  - DetectiveJackBoots # Wormix-Edit
 
 - type: loadoutGroup
   id: HeadofSecurityEnvirohelm
@@ -1476,7 +1479,7 @@
   - CMOMedicalHeadMirror
   - SecurityBeret
   - SecurityHat
-  - TrooperHat
+  - HeadBandRed
 
 - type: loadoutGroup
   id: BrigmedicOuterClothing
@@ -1546,6 +1549,7 @@
 - type: loadoutGroup
   id: SecurityGloves
   name: loadout-group-security-gloves
+  minLimit: 0 # Wormix-Edit
   loadouts:
   - BlackGloves
   - RedGloves

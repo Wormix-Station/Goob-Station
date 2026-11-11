@@ -37,16 +37,9 @@
 - type: startingGear
   id: PilotGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity # Wormix-Edit
     id: PilotPDA
     ears: ClothingHeadsetAltSecurityRegular
-    pocket1: WeaponPistolMk58Empty
-  storage:
-    back:
-    - Flash
-    - MagazinePistol
-    - MagazinePistol
-    - MagazinePistolRubber
 
 - type: chameleonOutfit
   id: PilotChameleonOutfit

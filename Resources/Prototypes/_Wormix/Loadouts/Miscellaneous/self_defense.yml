@@ -1,0 +1,11 @@
+- type: loadout
+  id: SelfDefenseFlash
+  storage:
+    back:
+    - Flash
+
+- type: loadout
+  id: SelfDefensePepperSpray
+  storage:
+    back:
+    - PepperSpray

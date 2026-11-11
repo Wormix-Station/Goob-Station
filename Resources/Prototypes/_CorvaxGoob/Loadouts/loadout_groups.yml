@@ -74,38 +74,34 @@
   id: PilotHead
   name: loadout-group-pilot-head
   minLimit: 0
-  loadouts:
+  loadouts: # Wormix-Edit
     - SecurityPilotBeret
     - SecurityHelmet
     - SecurityHelmetAlt
     - SecurityBeret
     - SecurityHat
-    - TrooperHat
+    - HeadBandRed
     - SideCap
 
 - type: loadoutGroup
   id: PilotJumpsuit
   name: loadout-group-pilot-jumpsuit
-  loadouts:
+  loadouts: # Wormix-Edit
     - JumpsuitPilot
     - JumpskirtPilot
     - SecurityJumpsuit
     - SecurityJumpskirt
     - SecurityJumpsuitGrey
     - SecurityJumpskirtGrey
-    - SeniorOfficerJumpsuit
-    - SeniorOfficerJumpskirt
-    - TrooperUniform
 
 - type: loadoutGroup
   id: PilotOuterClothing
   name: loadout-group-pilot-outerclothing
-  loadouts:
+  loadouts: # Wormix-Edit
+    - WinterSec
     - OuterWinterPilot
     - ArmorVest
     - ArmorVestSlim
-    - SecurityOfficerWintercoat
-    - WinterCoatSeniorSecArmored
 
 - type: loadoutGroup
   id: BrigmedicMask

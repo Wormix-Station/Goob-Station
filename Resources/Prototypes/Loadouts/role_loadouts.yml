@@ -677,11 +677,16 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - HeadofSecurityHead
+  - SecurityEyes # Wormix-Edit
+  - HeadOfSecurityMask
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
   - SecurityBackpack
+  - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
-  - SecurityBelt
+  - SecurityWeapon # Wormix-Edit
+  - SecurityBeltEmpty # Wormix-Edit
+  - SecurityBeltFill # Wormix-Edit
   - HeadofSecurityOuterClothing
   - HeadofSecurityShoes # Goobstation edit
   - HeadofSecurityGloves
@@ -706,11 +711,15 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - WardenHead
+  - SecurityEyes # Wormix-Edit
+  - SecurityNeck
   - WardenJumpsuit
   - WardenBackpack # CorvaxGoobChanges: SecurityBackpack > WardenBackpack
+  - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
-  - SecurityNeck
-  - SecurityBelt
+  - SecurityWeapon # Wormix-Edit
+  - SecurityBeltEmpty # Wormix-Edit
+  - SecurityBeltFill # Wormix-Edit
   - WardenOuterClothing
   - SecurityShoes
   - SecurityGloves #goob
@@ -735,15 +744,19 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - SecurityHead
+  - SecurityEyes # Wormix-Edit
+  - SecurityNeck
   - SecurityJumpsuit
   - SecurityBackpack
+  - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
+  - SecurityWeapon # Wormix-Edit
   - SecurityOuterClothing
   - SecurityShoes
   - SecurityGloves #goob
-  - SecurityNeck
   - SecurityPDA
-  - SecurityBelt
+  - SecurityBeltEmpty # Wormix-Edit
+  - SecurityBeltFill # Wormix-Edit
   - SurvivalSecurity
   - Trinkets
   - SecurityJobTrinkets
@@ -765,11 +778,15 @@
   groups:
   - Inventory # CorvaxGoob-loadouts
   - DetectiveHead
+  - SecurityEyes
   - DetectiveNeck
   - DetectiveJumpsuit
-  - SecurityBackpack
+  - DetectiveBackpack
+  - SelfDefense # Wormix-Edit
+  - DetectiveWeapon # Wormix-Edit
+  - DetectiveBelt # Wormix-Edit
   - DetectiveOuterClothing
-  - SecurityShoes
+  - DetectiveShoes # Wormix-Edit
   - DetectiveGloves
   - SurvivalSecurity
   - Trinkets
@@ -791,12 +808,18 @@
   id: JobSecurityCadet
   groups:
   - Inventory # CorvaxGoob-loadouts
+  - SecurityHead # Wormix-Edit
+  - SecurityEyes # Wormix-Edit
+  - SecurityNeck
   - SecurityCadetJumpsuit
   - SecurityBackpack
+  - SelfDefense # Wormix-Edit
   - SecurityMelee # Goobstation
-  - SurvivalSecurity
-  - SecurityNeck
+  - SecurityBeltStun # Wormix-Edit
   - SecurityOuterClothing # Goobstation - Why not.
+  - SecurityShoes # Wormix-Edit
+  - SecurityGloves # Wormix-Edit
+  - SurvivalSecurity
   - Trinkets
   - SecurityCadetJobTrinkets
   - Animals # Goobstation
