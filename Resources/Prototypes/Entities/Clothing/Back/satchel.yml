@@ -13,6 +13,14 @@
     - 0,0,1,3
     - 3,0,6,3
     - 8,0,9,3
+  # Wormix-Edit
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    foldVerbText: satchel-flip-verb
+    unfoldVerbText: satchel-unflip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: mirrored
 
 - type: entity
   parent: ClothingBackpackSatchel
@@ -182,7 +190,7 @@
     storageInsertSound: null
 
 - type: entity
-  parent: ClothingBackpackSatchel
+  parent: ClothingBackpack # Wormix-Edit
   id: ClothingBackpackSatchelHolding
   name: satchel of holding
   description: A satchel that opens into a localized pocket of bluespace.
