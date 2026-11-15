@@ -15,6 +15,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobSurgeon
@@ -40,6 +41,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobWardenHelper
@@ -72,6 +74,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 
 - type: roleLoadout
@@ -104,3 +107,4 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
