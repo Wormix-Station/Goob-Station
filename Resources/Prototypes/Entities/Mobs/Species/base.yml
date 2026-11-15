@@ -41,6 +41,9 @@
     - map: [ "gloves" ]
     - map: [ "wrists" ] # Orion
     - map: [ "shoes" ]
+    # Wormix-Start: tail below outerClothing/neck so cloaks cover it
+    - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    # Wormix-End
     - map: [ "earsright" ] # Orion
     - map: [ "ears" ]
     - map: [ "eyes" ]
@@ -56,9 +59,8 @@
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "maskalt" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ] # Wormix: below mask so neck/outerClothing can cover ears
     - map: [ "mask" ]
-    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
-    - map: [ "enum.HumanoidVisualLayers.Tail" ]
     - map: [ "enum.HumanoidVisualLayers.Wings" ] # For IPC wings porting from SimpleStation
     - map: [ "head" ]
     - map: [ "pocket1" ]
@@ -101,6 +103,23 @@
     horizontalRotation: 90
   - type: HumanoidAppearance
     species: Human
+  # Wormix-Start: facing south the face (and its markings) is drawn over neck/outerClothing, in other directions neck/outerClothing is drawn over the hair
+  - type: DirectionalClothingLayer
+    faceLayers:
+    - Head
+    - Snout
+    - Eyes
+    southFaceBefore: eyes
+    otherFaceBefore: RArm
+    southSlots:
+      outerClothing: belt
+      neck: back
+      eyes: back
+    otherSlots:
+      outerClothing: mask
+      neck: mask
+      eyes: belt
+  # Wormix-End
   - type: TypingIndicator
   - type: SlowOnDamage
     speedModifierThresholds:
@@ -422,6 +441,9 @@
     - map: [ "gloves" ]
     - map: [ "wrists" ] # Orion
     - map: [ "shoes" ]
+    # Wormix-Start: tail below outerClothing/neck so cloaks cover it
+    - map: [ "enum.HumanoidVisualLayers.Tail" ]
+    # Wormix-End
     - map: [ "earsright" ] # Orion
     - map: [ "ears" ]
     - map: [ "eyes" ]
@@ -436,9 +458,8 @@
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
     - map: [ "maskalt" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ] # Wormix: below mask so neck/outerClothing can cover ears
     - map: [ "mask" ]
-    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
-    - map: [ "enum.HumanoidVisualLayers.Tail" ]
     - map: [ "head" ]
     - map: [ "pocket1" ]
     - map: [ "pocket2" ]
