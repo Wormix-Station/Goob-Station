@@ -14,6 +14,14 @@
 #    - HeadTop # WWDP - Because visible horns its cool
     - HeadSide
     undergarmentBottom: UndergarmentBottomBoxersReptilian
+  # Wormix-Start: tail is drawn over the cloak/scarf (which otherSlots moves up to the mask layer) in other directions,
+  # and under the jumpsuit so it is not visible when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: jumpsuit
+    otherTailBefore: mask
+  # Wormix-End
   - type: Hunger
   - type: Puller
     needsHands: false
