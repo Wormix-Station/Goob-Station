@@ -11,3 +11,5 @@ loadout-group-detective-backpack = Детектив, рюкзак
 loadout-group-detective-belt = Детектив, пояс
 loadout-group-detective-shoes = Детектив, обувь
 loadout-group-detective-weapon = Личное оружие
+
+loadout-group-wormix-special = ОСОБЫЕ

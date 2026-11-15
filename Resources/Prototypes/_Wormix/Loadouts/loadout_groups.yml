@@ -94,3 +94,12 @@
   loadouts:
     - PistolMk58
     - RevolverDeckard
+
+# Спонсор
+- type: loadoutGroup
+  id: WormixSponsorGroup
+  name: loadout-group-wormix-special
+  minLimit: 0
+  maxLimit: 99
+  loadouts:
+    - ClothingNeckLegacyOfShipyardsLoadout

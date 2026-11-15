@@ -28,6 +28,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
@@ -56,6 +57,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # Silicons
 - type: roleLoadout
@@ -99,6 +101,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobBartender
@@ -125,6 +128,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -149,6 +153,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobChef
@@ -176,6 +181,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobLibrarian
@@ -200,6 +206,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobLawyer
@@ -225,6 +232,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobChaplain
@@ -255,6 +263,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobJanitor
@@ -282,6 +291,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobBotanist
@@ -308,6 +318,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobClown
@@ -335,6 +346,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobMime
@@ -366,6 +378,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 
 - type: roleLoadout
@@ -396,6 +409,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # Cargo
 - type: roleLoadout
@@ -425,6 +439,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -453,6 +468,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobSalvageSpecialist
@@ -480,6 +496,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # Engineering
 - type: roleLoadout
@@ -508,6 +525,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobTechnicalAssistant
@@ -531,6 +549,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobStationEngineer
@@ -559,6 +578,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
@@ -586,6 +606,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # Science
 - type: roleLoadout
@@ -616,6 +637,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobScientist
@@ -646,6 +668,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobResearchAssistant
@@ -670,6 +693,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # Security
 - type: roleLoadout
@@ -705,6 +729,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobWarden
@@ -738,6 +763,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobSecurityOfficer
@@ -772,6 +798,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobDetective
@@ -803,6 +830,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobSecurityCadet
@@ -834,6 +862,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # Medical
 - type: roleLoadout
@@ -866,6 +895,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobMedicalDoctor
@@ -896,6 +926,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobMedicalIntern
@@ -920,6 +951,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobChemist
@@ -948,6 +980,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobParamedic
@@ -977,6 +1010,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 
 - type: roleLoadout
@@ -1003,6 +1037,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 - type: roleLoadout
   id: JobPsychologist
@@ -1027,6 +1062,7 @@
   - Socks
   - Wrists
   # Orion-End
+  - WormixSponsorGroup # Wormix-Edit
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
 # They will be used without player configuration, thus they will only ever apply what is forced by MinLimit

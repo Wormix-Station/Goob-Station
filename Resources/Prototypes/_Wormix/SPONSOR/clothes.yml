@@ -1,0 +1,50 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckLegacyOfShipyards
+  name: Наследие Верфей
+  description: Мантия является символом инженерного мастерства на Мега-Верфи «Нейтронные Кузница».
+  suffix: CATOLODON
+  components:
+  - type: Item
+    size: Small
+    heldPrefix: both
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Sprite
+    sprite: /Textures/_Wormix/SPONSOR/legacyShipyards.rsi
+  - type: Clothing
+    sprite: /Textures/_Wormix/SPONSOR/legacyShipyards.rsi
+    equippedPrefix: both
+    slots:
+    - Neck
+  - type: ItemSwitch
+    state: both
+    showLabel: true
+    states:
+      both: !type:ItemSwitchState
+        verb: both
+        sprite:
+          sprite: /Textures/_Wormix/SPONSOR/legacyShipyards.rsi
+          state: icon
+      mantle: !type:ItemSwitchState
+        verb: mantle
+        sprite:
+          sprite: /Textures/_Wormix/SPONSOR/legacyShipyards.rsi
+          state: mantle-icon
+      cloak: !type:ItemSwitchState
+        verb: cloak
+        sprite:
+          sprite: /Textures/_Wormix/SPONSOR/legacyShipyards.rsi
+          state: cloak-icon
+          
+- type: loadout
+  id: ClothingNeckLegacyOfShipyardsLoadout
+  equipment:
+    neck: ClothingNeckLegacyOfShipyards
+  effects:
+  - !type:CkeyLoadoutEffect
+    players:
+    - CATOLODON
