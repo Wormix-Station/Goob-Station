@@ -47,9 +47,34 @@ public sealed class DirectionalClothingLayerSystem : EntitySystem
         }
 
         if (south)
-            MoveFace(ent, sprite, ent.Comp.SouthFaceBefore, null);
+        {
+            MoveBlock(ent, sprite, ent.Comp.FaceLayers, ent.Comp.SouthFaceBefore);
+            MoveBlock(ent, sprite, ent.Comp.TailLayers, ent.Comp.SouthTailBefore);
+        }
         else
-            MoveFace(ent, sprite, null, ent.Comp.OtherFaceBefore);
+        {
+            MoveBlock(ent, sprite, ent.Comp.FaceLayers, ent.Comp.OtherFaceBefore);
+            MoveBlock(ent, sprite, ent.Comp.TailLayers, ent.Comp.OtherTailBefore);
+        }
+    }
+
+    /// <summary>
+    /// Resolves a configured anchor key to a layer index. Base layer names (e.g. SnoutCover) are tried
+    /// before plain map keys (e.g. jumpsuit), so one config value works for both key kinds.
+    /// </summary>
+    private bool TryGetLayerIndex(Entity<SpriteComponent> sprite, string? key, out int index)
+    {
+        index = default;
+        if (string.IsNullOrEmpty(key))
+            return false;
+
+        if (Enum.TryParse<HumanoidVisualLayers>(key, out var enumKey) &&
+            _sprite.LayerMapTryGet(sprite.AsNullable(), enumKey, out index, false))
+        {
+            return true;
+        }
+
+        return _sprite.LayerMapTryGet(sprite.AsNullable(), key, out index, false);
     }
 
     private void MoveBookmark(
@@ -76,29 +101,25 @@ public sealed class DirectionalClothingLayerSystem : EntitySystem
             RaiseLocalEvent(ent, new VisualsChangedEvent(GetNetEntity(item.Value), slot));
     }
 
-    private void MoveFace(
+    private void MoveBlock(
         Entity<DirectionalClothingLayerComponent> ent,
         Entity<SpriteComponent> sprite,
-        string? stringAnchor,
-        Enum? enumAnchor)
+        List<HumanoidVisualLayers> layers,
+        string? anchor)
     {
-        if (ent.Comp.FaceLayers.Count == 0)
+        if (layers.Count == 0)
             return;
 
-        var anchorFound = stringAnchor != null
-            ? _sprite.LayerMapTryGet(sprite.AsNullable(), stringAnchor, out _, false)
-            : _sprite.LayerMapTryGet(sprite.AsNullable(), enumAnchor!, out _, false);
-
-        if (!anchorFound)
+        if (!TryGetLayerIndex(sprite, anchor, out _))
             return;
 
         var entries = new List<(int Index, Enum? EnumKey, string? StringKey)>();
         var seen = new HashSet<int>();
 
-        foreach (var face in ent.Comp.FaceLayers)
+        foreach (var baseLayer in layers)
         {
-            if (_sprite.LayerMapTryGet(sprite.AsNullable(), face, out var index, false) && seen.Add(index))
-                entries.Add((index, face, null));
+            if (_sprite.LayerMapTryGet(sprite.AsNullable(), baseLayer, out var index, false) && seen.Add(index))
+                entries.Add((index, baseLayer, null));
         }
 
         if (TryComp(ent, out HumanoidAppearanceComponent? humanoid))
@@ -124,7 +145,7 @@ public sealed class DirectionalClothingLayerSystem : EntitySystem
                             slot = parsed;
                         }
 
-                        if (!ent.Comp.FaceLayers.Contains(slot))
+                        if (!layers.Contains(slot))
                             continue;
 
                         var key = $"{proto.ID}-{rsi.RsiState}";
@@ -153,13 +174,9 @@ public sealed class DirectionalClothingLayerSystem : EntitySystem
         }
 
         // Null index appends at the end, which is only reached if the anchor vanished during removal.
-        int? anchorIndex = null;
-        if (stringAnchor != null
-                ? _sprite.LayerMapTryGet(sprite.AsNullable(), stringAnchor, out var s, false)
-                : _sprite.LayerMapTryGet(sprite.AsNullable(), enumAnchor!, out s, false))
-        {
-            anchorIndex = s;
-        }
+        int? anchorIndex = TryGetLayerIndex(sprite, anchor, out var anchorIndexValue)
+            ? anchorIndexValue
+            : null;
 
         foreach (var (layer, enumKey, stringKey) in removed)
         {
