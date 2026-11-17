@@ -9,6 +9,13 @@
   components:
   - type: HumanoidAppearance
     species: Vulpkanin
+  # Wormix-Start: tail is drawn over the outerClothing and under the cloak in other directions, and under the outerClothing when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: outerClothing
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: Hunger
   - type: Inventory # Allows vulps to wear properly shaped helmets
     speciesId: vulpkanin

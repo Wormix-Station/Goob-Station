@@ -9,6 +9,13 @@
   components:
   - type: HumanoidAppearance
     species: Rodentia
+  # Wormix-Start: tail is drawn over the outerClothing and under the cloak in other directions, and under the outerClothing when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: outerClothing
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: Hunger
     baseDecayRate: 0.054166 # Goobstation base rate changed, 33% faster than base
   - type: Thirst # // Goob Station //

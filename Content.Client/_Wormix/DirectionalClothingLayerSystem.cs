@@ -40,21 +40,29 @@ public sealed class DirectionalClothingLayerSystem : EntitySystem
 
     private void Arrange(Entity<DirectionalClothingLayerComponent> ent, Entity<SpriteComponent> sprite, bool south)
     {
-        // Slots first, so that the face block ends up in front of them when both share an anchor.
-        foreach (var (slot, anchor) in south ? ent.Comp.SouthSlots : ent.Comp.OtherSlots)
-        {
-            MoveBookmark(ent, sprite, slot, anchor);
-        }
-
         if (south)
         {
+            // Slots first, so that the face block ends up in front of them when both share an anchor.
+            foreach (var (slot, anchor) in ent.Comp.SouthSlots)
+            {
+                MoveBookmark(ent, sprite, slot, anchor);
+            }
+
             MoveBlock(ent, sprite, ent.Comp.FaceLayers, ent.Comp.SouthFaceBefore);
             MoveBlock(ent, sprite, ent.Comp.TailLayers, ent.Comp.SouthTailBefore);
         }
         else
         {
-            MoveBlock(ent, sprite, ent.Comp.FaceLayers, ent.Comp.OtherFaceBefore);
+            // Tail first: the slot bookmarks (e.g. the cloak at pocket1) are inserted afterwards,
+            // so the tail ends up above the helmet but below the cloak.
             MoveBlock(ent, sprite, ent.Comp.TailLayers, ent.Comp.OtherTailBefore);
+
+            foreach (var (slot, anchor) in ent.Comp.OtherSlots)
+            {
+                MoveBookmark(ent, sprite, slot, anchor);
+            }
+
+            MoveBlock(ent, sprite, ent.Comp.FaceLayers, ent.Comp.OtherFaceBefore);
         }
     }
 

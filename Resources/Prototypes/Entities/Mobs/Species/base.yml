@@ -103,7 +103,7 @@
     horizontalRotation: 90
   - type: HumanoidAppearance
     species: Human
-  # Wormix-Start: facing south the face (and its markings) is drawn over neck/outerClothing, in other directions neck/outerClothing is drawn over the hair
+  # Wormix-Start: facing south the face (and its markings) is drawn over neck/outerClothing, in other directions neck/outerClothing is drawn over the hair and the neck is drawn over headwear
   - type: DirectionalClothingLayer
     faceLayers:
     - Head
@@ -117,7 +117,7 @@
       eyes: back
     otherSlots:
       outerClothing: mask
-      neck: mask
+      neck: pocket1
       eyes: belt
   # Wormix-End
   - type: TypingIndicator
