@@ -134,6 +134,13 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  # Wormix-Start: tail is drawn over the outerClothing and under the cloak in other directions, and under the outerClothing when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: outerClothing
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: TypingIndicator
     proto: plasmaman
   - type: LanguageKnowledge

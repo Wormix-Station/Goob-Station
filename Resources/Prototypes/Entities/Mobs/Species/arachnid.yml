@@ -12,6 +12,13 @@
     requiredLegs: 2 # It would be funny if arachnids could use their little back limbs to move around once they lose their legs, but just something to consider post-woundmed
   - type: HumanoidAppearance
     species: Arachnid
+  # Wormix-Start: tail is drawn over the outerClothing and under the cloak in other directions; facing south it keeps its natural place above the outerClothing (belt anchor)
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: belt
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: Hunger
   - type: Thirst
   - type: Sericulture

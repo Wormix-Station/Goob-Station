@@ -28,6 +28,13 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  # Wormix-Start: tail is drawn over the outerClothing/headwear/neck in other directions, and under the outerClothing when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: outerClothing
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: Inventory
     femaleDisplacements:
       jumpsuit:

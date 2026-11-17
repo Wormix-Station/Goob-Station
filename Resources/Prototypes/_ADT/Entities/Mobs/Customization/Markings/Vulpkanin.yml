@@ -165,8 +165,8 @@
 
 - type: marking
   id: ADTVulpkaninEyeGlow
-  bodyPart: LLeg
-  markingCategory: LeftLeg
+  bodyPart: Eyes
+  markingCategory: Head
   speciesRestriction: [Vulpkanin]
   sprites:
     - sprite: _ADT/Mobs/Customization/Vulpkanin/vulpkanin_head.rsi

@@ -13,6 +13,13 @@
     # scale: 0.8, 0.8 # Goobstation: port EE height/width sliders
   - type: HumanoidAppearance
     species: Felinid
+  # Wormix-Start: tail is drawn over the outerClothing and under the cloak in other directions, and under the outerClothing when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: outerClothing
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:

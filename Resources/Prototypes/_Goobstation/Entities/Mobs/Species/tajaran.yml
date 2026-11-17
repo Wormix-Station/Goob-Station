@@ -29,6 +29,13 @@
       amount: 3
   - type: HumanoidAppearance
     species: Tajaran
+  # Wormix-Start: tail is drawn over the outerClothing and under the cloak in other directions, and under the outerClothing when facing south
+  - type: DirectionalClothingLayer
+    tailLayers:
+    - Tail
+    southTailBefore: outerClothing
+    otherTailBefore: pocket1
+  # Wormix-End
   - type: Body
     prototype: Tajaran
     requiredLegs: 2
