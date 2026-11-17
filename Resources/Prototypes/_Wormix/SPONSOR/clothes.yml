@@ -2,7 +2,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckLegacyOfShipyards
   name: Наследие Верфей
-  description: Мантия является символом инженерного мастерства на Мега-Верфи «Нейтронные Кузница».
+  description: Мантия является символом инженерного мастерства на Мега-Верфи «Нейтронная Кузница».
   suffix: CATOLODON
   components:
   - type: Item
