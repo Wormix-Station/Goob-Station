@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: gamePreset
+  id: DepartmentGoals
+  alias:
+  - departmentgoals
+  name: department-goals-title
+  showInVote: true
+  description: department-goals-description
+  rules:
+  #- SpaceTrafficControlFriendlyEventScheduler
+  - BasicRoundstartVariation
