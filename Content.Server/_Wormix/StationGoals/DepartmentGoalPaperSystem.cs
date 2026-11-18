@@ -38,10 +38,7 @@ public sealed class DepartmentGoalPaperSystem : EntitySystem
 
 
         var ticker = _entity.System<GameTicker>();
-        bool isGreenshift = false;
-
-        if (ticker?.CurrentPreset?.ID == "Greenshift")
-            isGreenshift = true;
+        bool isGoalMode = ticker?.CurrentPreset?.ID == "DepartmentGoals";
 
 
 
@@ -92,7 +89,7 @@ public sealed class DepartmentGoalPaperSystem : EntitySystem
             if (selGoal.Count == 0)
                 return;
 
-            if (isGreenshift)
+            if (!isGoalMode)
             {
                 if (SendStationTransit(uid))
                 {
