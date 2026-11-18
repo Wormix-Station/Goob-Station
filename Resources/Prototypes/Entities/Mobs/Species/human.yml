@@ -32,7 +32,7 @@
   - type: DirectionalClothingLayer
     tailLayers:
     - Tail
-    southTailBefore: outerClothing
+    southTailBefore: jumpsuit
     otherTailBefore: pocket1
   # Wormix-End
   - type: Inventory
