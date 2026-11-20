@@ -28,6 +28,7 @@
     Chest: MobArachnidChest
     Groin: MobArachnidGroin
     Hair: MobHumanoidAnyMarking # imp, arachnid hair arachnid hair!
+    FacialHair: MobHumanoidAnyMarking # Orion-Edit
     HeadTop: MobHumanoidAnyMarking
     Eyes: MobArachnidEyes
     HeadSide: MobHumanoidAnyMarking
@@ -49,9 +50,12 @@
 
 - type: markingPoints
   id: MobArachnidMarkingLimits
-  onlyWhitelisted: true
+  #onlyWhitelisted: true # Orion-Edit: Removed - allow all unrestricted markings like humans
   points:
     Hair:
+      points: 1
+      required: false
+    FacialHair: # Orion-Edit
       points: 1
       required: false
     Tail:
