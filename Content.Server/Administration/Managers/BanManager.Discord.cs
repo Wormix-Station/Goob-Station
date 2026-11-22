@@ -100,14 +100,14 @@ public sealed partial class BanManager
             if (ban.ExpirationTime is null)
                 message = Loc.GetString("ban-manager-notify-discord-role-perma",
                     ("admin", admin),
-                    ("roles", string.Join(", ", ban.Roles)),
+                    ("roles", string.Join(", ", ban.Roles ?? [])),
                     ("player", player),
                     ("reason", ban.Reason));
             else
                 message = Loc.GetString("ban-manager-notify-discord-role",
                     ("admin", admin),
                     ("player", player),
-                    ("roles", string.Join(", ", ban.Roles.GetValueOrDefault())),
+                    ("roles", string.Join(", ", ban.Roles ?? [])),
                     ("expiration", ban.ExpirationTime.Value.DateTime),
                     ("reason", ban.Reason));
 
