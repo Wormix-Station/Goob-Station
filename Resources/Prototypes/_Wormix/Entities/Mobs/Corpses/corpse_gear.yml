@@ -1,0 +1,252 @@
+# Wormix-Start: одежда для неизвестных трупов. Только одежда — никаких КПК,
+# ID-карт, наушников и рюкзаков, чтобы трупы не давали доступы.
+# Один набор на профессию: Loadout системы выбирает случайный из списка.
+
+- type: startingGear
+  id: SalvageCorpseGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    shoes: ClothingShoesColorBlack
+
+# Сервис
+- type: startingGear
+  id: SalvageCorpseGearClown
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitClown
+    shoes: ClothingShoesClown
+    mask: ClothingMaskClown
+
+- type: startingGear
+  id: SalvageCorpseGearMime
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMime
+    shoes: ClothingShoesColorWhite
+    mask: ClothingMaskMime
+
+- type: startingGear
+  id: SalvageCorpseGearJanitor
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJanitor
+    shoes: ClothingShoesGaloshes
+    head: ClothingHeadHatPurplesoft
+    gloves: ClothingHandsGlovesJanitor
+
+- type: startingGear
+  id: SalvageCorpseGearMusician
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMusician
+    shoes: ClothingShoesColorBlack
+    head: ClothingHeadHatTophat
+
+- type: startingGear
+  id: SalvageCorpseGearBotanist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHydroponics
+    shoes: ClothingShoesColorBlack
+    head: ClothingHeadBandBotany
+    gloves: ClothingHandsGlovesLeather
+
+- type: startingGear
+  id: SalvageCorpseGearChef
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+    shoes: ClothingShoesChef
+    head: ClothingHeadHatChef
+
+- type: startingGear
+  id: SalvageCorpseGearChaplain
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChaplain
+    shoes: ClothingShoesColorBlack
+    neck: ClothingNeckStoleChaplain
+
+- type: startingGear
+  id: SalvageCorpseGearBartender
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartender
+    shoes: ClothingShoesColorBlack
+
+- type: startingGear
+  id: SalvageCorpseGearLawyer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLawyerBlue
+    shoes: ClothingShoesColorBrown
+
+# Инженерия
+- type: startingGear
+  id: SalvageCorpseGearEngineer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineering
+    shoes: ClothingShoesBootsWork
+    head: ClothingHeadHatHardhatYellow
+    eyes: ClothingEyesGlassesMeson
+
+- type: startingGear
+  id: SalvageCorpseGearAtmos
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAtmos
+    shoes: ClothingShoesBootsWork
+    head: ClothingHeadHatHardhatYellow
+
+- type: startingGear
+  id: SalvageCorpseGearTechnicalAssistant
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorYellow
+    shoes: ClothingShoesBootsWork
+    head: ClothingHeadHatHardhatYellow
+
+# Карго
+- type: startingGear
+  id: SalvageCorpseGearCargoTech
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargo
+    shoes: ClothingShoesColorBrown
+    head: ClothingHeadHatCargosoft
+
+- type: startingGear
+  id: SalvageCorpseGearSalvage
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    shoes: ClothingShoesBootsSalvage
+    head: ClothingHeadHatCargosoft
+
+# Медицина
+- type: startingGear
+  id: SalvageCorpseGearMedicalIntern
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+
+- type: startingGear
+  id: SalvageCorpseGearDoctor
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+    head: ClothingHeadNurseHat
+
+- type: startingGear
+  id: SalvageCorpseGearSurgeon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    shoes: ClothingShoesColorWhite
+    head: ClothingHeadHatSurgcapBlue
+    mask: ClothingMaskSterile
+
+- type: startingGear
+  id: SalvageCorpseGearChemist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChemistry
+    shoes: ClothingShoesColorWhite
+    eyes: ClothingEyesGlassesChemical
+
+- type: startingGear
+  id: SalvageCorpseGearPsychologist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPsychologist
+    shoes: ClothingShoesColorWhite
+
+- type: startingGear
+  id: SalvageCorpseGearParamedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitParamedic
+    shoes: ClothingShoesColorBlue
+
+# Наука
+- type: startingGear
+  id: SalvageCorpseGearResearchAssistant
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientist
+    shoes: ClothingShoesColorWhite
+
+- type: startingGear
+  id: SalvageCorpseGearScientist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientist
+    shoes: ClothingShoesColorWhite
+    head: ClothingHeadHatCorpsoft
+
+- type: startingGear
+  id: SalvageCorpseGearRoboticist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRoboticist
+    shoes: ClothingShoesColorWhite
+
+# Служба безопасности
+- type: startingGear
+  id: SalvageCorpseGearSecurityCadet
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+    shoes: ClothingShoesBootsJack
+
+- type: startingGear
+  id: SalvageCorpseGearOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHatBeretSecurity
+
+- type: startingGear
+  id: SalvageCorpseGearDetective
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetective
+    shoes: ClothingShoesColorBrown
+    head: ClothingHeadHatFedoraBrown
+    outerClothing: ClothingOuterCoatDetective
+
+- type: startingGear
+  id: SalvageCorpseGearWarden
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWarden
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHatWarden
+
+# Командование
+- type: startingGear
+  id: SalvageCorpseGearCaptain
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptain
+    shoes: ClothingShoesBootsLaceup
+    head: ClothingHeadHatCapcap
+
+- type: startingGear
+  id: SalvageCorpseGearHoP
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoP
+    shoes: ClothingShoesBootsLaceup
+    head: ClothingHeadHatHopcap
+
+- type: startingGear
+  id: SalvageCorpseGearHoS
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoS
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHatBeretHoS
+
+- type: startingGear
+  id: SalvageCorpseGearRD
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitResearchDirector
+    shoes: ClothingShoesColorWhite
+    head: ClothingHeadHatBeretRND
+
+- type: startingGear
+  id: SalvageCorpseGearCMO
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCMO
+    shoes: ClothingShoesColorWhite
+    head: ClothingHeadHatBeretCmo
+
+- type: startingGear
+  id: SalvageCorpseGearCE
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChiefEngineer
+    shoes: ClothingShoesBootsWork
+    head: ClothingHeadHatBeretEngineering
+
+- type: startingGear
+  id: SalvageCorpseGearQM
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitQM
+    shoes: ClothingShoesColorBrown
+    head: ClothingHeadHatBeretQM
+# Wormix-End

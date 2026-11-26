@@ -99,8 +99,23 @@
         Asphyxiation: 76
         Slash: 56
         Blunt: 19
-  # - type: Inventory # CorvaxGoob
-  #   templateId: corpse
+  # Wormix-Start: inventory without id/ears/back slots so corpses can't carry PDAs with access
+  - type: Inventory
+    templateId: corpse
+  - type: Loadout
+    prototypes: # Wormix-Start
+    - SalvageCorpseGear
+    - SalvageCorpseGearClown
+    - SalvageCorpseGearMime
+    - SalvageCorpseGearJanitor
+    - SalvageCorpseGearMusician
+    - SalvageCorpseGearBotanist
+    - SalvageCorpseGearChef
+    - SalvageCorpseGearChaplain
+    - SalvageCorpseGearBartender
+    - SalvageCorpseGearLawyer
+    # Wormix-End
+  # Wormix-End
   - type: PartialAbsorbable # Goobstation - changelings
 
 - type: entity
