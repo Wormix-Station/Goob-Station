@@ -6,17 +6,18 @@
   suffix: Dead, Service
   components:
   - type: Loadout
-    prototypes:
-      - HoPGear
-      - ClownGear
-      - MimeGear
-      - JanitorGear
-      - ServiceWorkerGear
-      - MusicianGear
-      - BotanistGear
-      - ChefGear
-      - ChaplainGear
-      - PassengerGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGear
+    - SalvageCorpseGearClown
+    - SalvageCorpseGearMime
+    - SalvageCorpseGearJanitor
+    - SalvageCorpseGearMusician
+    - SalvageCorpseGearBotanist
+    - SalvageCorpseGearChef
+    - SalvageCorpseGearChaplain
+    - SalvageCorpseGearBartender
+    - SalvageCorpseGearLawyer
+    # Wormix-End
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -24,10 +25,11 @@
   suffix: Dead, Engineer
   components:
   - type: Loadout
-    prototypes:
-    - TechnicalAssistantGear
-    - AtmosphericTechnicianGear
-    - StationEngineerGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGearEngineer
+    - SalvageCorpseGearAtmos
+    - SalvageCorpseGearTechnicalAssistant
+    # Wormix-End
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -35,9 +37,10 @@
   suffix: Dead, Cargo
   components:
   - type: Loadout
-    prototypes:
-    - CargoTechGear
-    - SalvageSpecialistGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGearCargoTech
+    - SalvageCorpseGearSalvage
+    # Wormix-End
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -45,11 +48,14 @@
   suffix: Dead, Medic
   components:
   - type: Loadout
-    prototypes:
-    - MedicalInternGear
-    - PsychologistGear
-    - ChemistGear
-    - DoctorGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGearMedicalIntern
+    - SalvageCorpseGearDoctor
+    - SalvageCorpseGearSurgeon
+    - SalvageCorpseGearChemist
+    - SalvageCorpseGearPsychologist
+    - SalvageCorpseGearParamedic
+    # Wormix-End
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -57,9 +63,11 @@
   suffix: Dead, Science
   components:
   - type: Loadout
-    prototypes:
-    - ResearchAssistantGear
-    - ScientistGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGearResearchAssistant
+    - SalvageCorpseGearScientist
+    - SalvageCorpseGearRoboticist
+    # Wormix-End
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -67,11 +75,12 @@
   suffix: Dead, Security
   components:
   - type: Loadout
-    prototypes:
-    - SecurityCadetGear
-    - SecurityOfficerGear
-    - DetectiveGear
-    - WardenGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGearSecurityCadet
+    - SalvageCorpseGearOfficer
+    - SalvageCorpseGearDetective
+    - SalvageCorpseGearWarden
+    # Wormix-End
 
 - type: entity
   parent: SalvageHumanCorpse
@@ -79,12 +88,12 @@
   suffix: Dead, Command
   components:
   - type: Loadout
-    prototypes:
-    - HoPGear
-    - MobRandomCommandCorpseCentComm # Goobstation Nerfed CentComm Space Salvage Gear
-    - CaptainGear
-    - HoSGear
-    - ResearchDirectorGear
-    - CMOGear
-    - ChiefEngineerGear
-    - QuartermasterGear
+    prototypes: # Wormix-Start
+    - SalvageCorpseGearCaptain
+    - SalvageCorpseGearHoP
+    - SalvageCorpseGearHoS
+    - SalvageCorpseGearRD
+    - SalvageCorpseGearCMO
+    - SalvageCorpseGearCE
+    - SalvageCorpseGearQM
+    # Wormix-End
